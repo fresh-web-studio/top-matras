@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Calibri Regular';
+  src: url('assets/fonts/Calibri.eot');
+  src: url('assets/fonts/Calibri.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/Calibri.woff') format('woff'),
+  url('assets/fonts/Calibri.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font: 'Calibri Regular';
+$images: url(assets/images);
+$blue: #1F316A;
+$pale-blue: #526699;
+$yellow: #EFCA58;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Calibri Regular';
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: $font;
+}
+
+.container {
+  width: 71.146vw;
+  margin: 0 auto;
+  padding: 0 1.042vw;
+}

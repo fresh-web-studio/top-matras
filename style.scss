@@ -61,6 +61,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /* Document
 	 ========================================================================== */
+@import "base-scss.scss";
 
 /**
  * 1. Correct the line height in all browsers.
@@ -483,11 +484,6 @@ hr {
 	margin-bottom: 1.5em;
 }
 
-ul,
-ol {
-	margin: 0 0 1.5em 3em;
-}
-
 ul {
 	list-style: disc;
 }
@@ -887,6 +883,163 @@ textarea {
 .infinite-scroll.neverending .site-footer {
 	display: none;
 }
+
+
+footer {
+	color: white;
+	a {
+		color: white;
+		&:hover {
+			color: $yellow;
+		}
+	}
+	.footer__main {
+		background-color: $blue;
+	}
+	.footer__row {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 2.760vw 0 5vw;
+	}
+	.footer__column {
+		width: 25%;
+	}
+	.footer__column-header {
+		font-weight: bold;
+		font-size: 1.198vw;
+		padding-bottom: 1.354vw;
+	}
+	.footer__menu-link {
+		font-size: 0.938vw;
+		line-height: 2vw;
+	}
+	.footer__social {
+		margin-bottom: 0.521vw;
+	}
+
+	.first, .second {
+		border: 0.16vw solid transparent;
+		margin: 0;
+		padding: 0;
+		width: 2.135vw;
+		height: 2.135vw;
+	}
+
+	.first {
+		opacity: 1;
+		/*display: block;*/
+		position: absolute;
+		z-index: 100;
+		transition-duration: 1s;
+		-webkit-transition-duration: 1s;
+		-moz-transition-duration: 1s;
+		-o-transition-duration: 1s;
+		-ms-transition-duration: 1s;
+	}
+
+	.first:hover {
+		opacity: 0.00;
+	}
+	.footer__copyright {
+		background-color: $pale-blue;
+		font-size: 0.833vw;
+	}
+	.footer__row-copyright {
+		display: flex;
+		align-items: center;
+		height: 2.813vw;
+	}
+	.year {
+		margin: 0 0.625vw;
+	}
+}
+
+@media all and (max-width: 1366px) {
+	$coefficient: 1.4;
+	.container {
+		width: 100vw;
+		padding: 0 1.464vw;
+	}
+	footer {
+		.footer__row {
+			padding: 2.760vw * $coefficient 0 5vw * $coefficient;
+		}
+		.footer__column-header {
+			font-size: 1.198vw * $coefficient;
+			padding-bottom: 1.354vw * $coefficient;
+		}
+		.footer__menu-link {
+			font-size: 0.938vw * $coefficient;
+			line-height: 2vw * $coefficient;
+		}
+		.footer__social {
+			margin-bottom: 0.521vw * $coefficient;
+		}
+
+		.first, .second {
+			border: 0.16vw * $coefficient solid transparent;
+			width: 2.135vw * $coefficient;
+			height: 2.135vw * $coefficient;
+		}
+
+		.footer__copyright {
+			font-size: 0.833vw * $coefficient;
+		}
+		.footer__row-copyright {
+			height: 2.813vw * $coefficient;
+		}
+		.year {
+			margin: 0 0.625vw * $coefficient;
+		}
+	}
+}
+
+@media all and (max-width: 415px) {
+	$coefficient: 5;
+	.container {
+		padding: 0 3.614vw;
+	}
+	footer {
+		.footer__row {
+			padding: 2.760vw * $coefficient 0 5vw * $coefficient;
+		}
+		.footer__column-header {
+			font-size: 1.198vw * $coefficient;
+			padding-bottom: 1.354vw * $coefficient;
+		}
+		.footer__column {
+			width: 100vw;
+		}
+		.footer__column:first-child {
+			padding-bottom: 1.354vw * $coefficient;
+		}
+		.footer__menu-link {
+			font-size: 0.938vw * $coefficient;
+			line-height: 2vw * $coefficient;
+		}
+		.footer__social {
+			margin-bottom: 0.521vw * $coefficient;
+		}
+
+		.first, .second {
+			border: 0.16vw * $coefficient solid transparent;
+			width: 2.135vw * $coefficient;
+			height: 2.135vw * $coefficient;
+		}
+
+		.footer__copyright {
+			font-size: 0.833vw * $coefficient;
+		}
+		.footer__row-copyright {
+			height: 2.813vw * $coefficient;
+		}
+		.year {
+			margin: 0 0.625vw * $coefficient;
+		}
+	}
+}
+
 
 /* Re-display the Theme Footer when Infinite Scroll has reached its end. */
 .infinity-end.neverending .site-footer {
