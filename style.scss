@@ -719,9 +719,9 @@ textarea {
 	margin: 0 0 1.5em;
 }
 
-.comment-navigation .nav-links,
-.posts-navigation .nav-links,
-.post-navigation .nav-links {
+.comment-navigation a,
+.posts-navigation a,
+.post-navigation a {
 	display: flex;
 }
 
@@ -884,6 +884,253 @@ textarea {
 	display: none;
 }
 
+/* fix Фиксированного меню */
+
+#wpadminbar + #page > .header {
+top: 2.27vw;
+}
+
+/* /fix Фиксированного меню */
+
+
+.header {
+	width: 100vw;
+	background: #fff;
+	-webkit-box-shadow: 0 0.260vw 1.302vw rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0.260vw 1.302vw rgba(0, 0, 0, 0.15);
+	z-index: 100;
+	position: relative;
+	top: 0;
+	position: fixed;
+
+	.header-wrapper {
+		width: 97.813vw;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 2.917vw;
+
+
+
+		.header-logo_burger {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 0.365vw;
+
+			.header__nav {
+				position: absolute;
+				right: 1.875vw;
+				display: block;
+			}
+
+			.header__menu {
+				display: flex;
+				position: relative;
+				z-index: 2;
+			}
+
+			.header__menu li {
+				list-style: none;
+				margin: 0 0 0 1.875vw;
+				font-size: 0.833vw;
+				text-transform: uppercase;
+				text-decoration: none;
+			}
+
+			.content-wrapper {
+				margin-top: 4.063vw;
+				padding: 0.521vw;
+				line-height: 1.771vw;
+			}
+
+			a {
+				color: #242e31;
+				text-decoration: none;
+				font-weight: 600;
+				img {
+					width: 13.438vw;
+				}
+			}
+		}
+
+		.nav-menu {
+			list-style: none;
+			display: flex;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 0.938vw;
+			line-height: 1.146vw;
+			text-align: center;
+
+			.sub-menu {
+				position: absolute;
+				top: 2.9vw;
+				left: 1.094vw;
+				min-width: 100vw;
+				min-height: 22.656vw;
+				display: none;
+				background: #fff;
+			}
+
+			a {
+				color: #1F316A;
+				text-decoration: none;
+				border-bottom: 0.150vw solid transparent;
+				padding: 0.83vw 0.729vw;
+			}
+
+			.menu-item:hover .sub-menu {
+				display: block;
+			}
+
+			a:hover {
+				border-bottom: 0.150vw solid #1F316A;
+			}
+
+
+			.menu-item {
+				background-color: transparent;
+			}
+
+			.deactive {
+				color: #1F316A;
+				text-decoration: none;
+				padding: 0.729vw 0.729vw;
+			}
+		}
+
+		.header-right {
+			display: flex;
+			align-items: center;
+
+			.map {
+				color: #1f316a;
+
+				display: flex;
+				text-decoration: none;
+				margin-right: 0.573vw;
+
+				.map-name {
+					font-style: normal;
+					font-weight: normal;
+					font-size: 0.938vw;
+					line-height: 1.146vw;
+					padding-left: 0.401vw;
+					color: #1F316A;
+				}
+			}
+
+			.shopping-cart {
+				display: flex;
+				flex-direction: column;
+				margin-top: 0.172vw;
+			}
+		}
+	}
+}
+.burger-menu {
+	//Начало бургер меню
+
+	cursor: pointer;
+	margin-right: 1.875vw;
+
+	.input {
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	.menu-btn {
+		display: flex;
+		align-items: center;
+		position: absolute;
+		left: 1.090vw;
+		right: 97.760vw;
+		top: 1.443vw;
+		z-index: 1;
+	}
+
+	.menu-btn>span,
+	.menu-btn>span::before,
+	.menu-btn>span::after {
+		display: block;
+		position: absolute;
+		width: 1.146vw;
+		height: 0.104vw;
+		background-color: #1F316A;
+		transition-duration: .25s;
+		cursor: pointer;
+	}
+
+	.menu-btn>span::before {
+		content: '';
+		top: -0.417vw;
+	}
+
+	.menu-btn>span::after {
+		content: '';
+		top: 0.417vw;
+	}
+
+	.menubox {
+		display: block;
+		position: fixed;
+		visibility: hidden;
+		top: 0;
+		left: -100vw;
+		width: 15.625vw;
+		height: 100vw;
+		margin: 0;
+		padding: 4.167vw 0;
+		list-style: none;
+		background-color: #ECEFF1;
+		box-shadow: 0.052vw 0px 0.313vw rgba(0, 0, 0, .2);
+		transition-duration: .25s;
+	}
+
+	.menu-item {
+		display: block;
+		padding: 0.625vw 1.250vw;
+		color: #333;
+		font-family: 'Roboto', sans-serif;
+		font-size: 1.042vw;
+		font-weight: 600;
+		text-decoration: none;
+		transition-duration: .25s;
+	}
+
+	.menu-item:hover {
+		background-color: #CFD8DC;
+	}
+
+
+	#menu-toggle {
+		opacity: 0;
+	}
+
+	#menu-toggle:checked~.menu-btn>span {
+		transform: rotate(45deg);
+	}
+
+	#menu-toggle:checked~.menu-btn>span::before {
+		top: 0;
+		transform: rotate(0);
+	}
+
+	#menu-toggle:checked~.menu-btn>span::after {
+		top: 0;
+		transform: rotate(90deg);
+	}
+
+	#menu-toggle:checked~.menubox {
+		visibility: visible;
+		left: 0;
+	}
+
+	//Конец бургер меню
+
+}
 
 footer {
 	color: white;
@@ -961,6 +1208,101 @@ footer {
 		width: 100vw;
 		padding: 0 1.464vw;
 	}
+	.header {
+		width: 100vw;
+		-webkit-box-shadow: 0 0.260vw * $coefficient 1.302vw * $coefficient rgba(0, 0, 0, 0.15);
+		box-shadow: 0 0.260vw * $coefficient 1.302vw * $coefficient rgba(0, 0, 0, 0.15);
+
+		.header-wrapper {
+			width: 100vw;
+			height: 2.917vw;
+
+			.header-logo_burger {
+				margin-top: 0.365vw * $coefficient;
+
+				.header__nav {
+					right: 1.875vw * $coefficient;
+				}
+
+				.header__menu {
+					display: flex;
+					position: relative;
+					z-index: 2;
+				}
+
+				.header__menu li {
+					list-style: none;
+					margin: 0 0 0 1.875vw * $coefficient;
+					font-size: 0.833vw * $coefficient;
+					text-transform: uppercase;
+					text-decoration: none;
+				}
+
+				.content-wrapper {
+					margin-top: 4.063vw * $coefficient;
+					padding: 0.521vw * $coefficient;
+					line-height: 1.771vw * $coefficient;
+				}
+
+				a {
+					img {
+						width: 13.438vw;
+					}
+
+				}
+			}
+
+			.nav-menu {
+				font-size: 0.938vw;
+				line-height: 1.146vw;
+
+				.sub-menu {
+					top: 3vw;
+					min-width: 100vw * $coefficient;
+					min-height: 22.656vw * $coefficient;
+				}
+
+				a {
+					border-bottom: 0.150vw * $coefficient solid transparent;
+					padding: 0.729vw * $coefficient 0.729vw * $coefficient;
+				}
+
+				.nav:hover .sub-menu {
+
+				}
+
+				a:hover {
+					border-bottom: 0.150vw * $coefficient solid #1F316A;
+				}
+
+				.nav {
+				}
+
+				.deactive {
+					padding: 0.729vw * $coefficient 0.729vw * $coefficient;
+				}
+
+			}
+
+			.header-right {
+
+				.map {
+					margin-right: 0.573vw * $coefficient;
+
+					.map-name {
+						font-size: 0.938vw;
+						line-height: 1.146vw;
+						padding-left: 0.401vw * $coefficient;
+					}
+				}
+
+				.shopping-cart {
+					margin-top: 0.172vw * $coefficient;
+				}
+			}
+		}
+	}
+
 	footer {
 		.footer__row {
 			padding: 2.760vw * $coefficient 0 5vw * $coefficient;
@@ -996,10 +1338,239 @@ footer {
 }
 
 @media all and (max-width: 415px) {
-	$coefficient: 5;
+	$coefficient: 4;
 	.container {
 		padding: 0 3.614vw;
 	}
+	.header {
+		width: 100vw;
+		-webkit-box-shadow: 0 0.260vw * $coefficient 1.302vw * $coefficient rgba(0, 0, 0, 0.15);
+		box-shadow: 0 0.260vw * $coefficient 1.302vw * $coefficient rgba(0, 0, 0, 0.15);
+
+		.header-wrapper {
+			width: 97.813vw ;
+
+
+			height: 2.917vw * $coefficient;
+
+
+
+			.header-logo_burger {
+
+				margin-top: 0.365vw * $coefficient;
+
+				.header__nav {
+
+					right: 1.875vw * $coefficient;
+
+				}
+
+				.header__menu {}
+
+				.header__menu li {
+
+					margin: 0 0 0 1.875vw * $coefficient;
+					font-size: 0.833vw * $coefficient;
+				}
+
+				.content-wrapper {
+					margin-top: 4.063vw * $coefficient;
+					padding: 0.521vw * $coefficient;
+					line-height: 1.771vw * $coefficient;
+				}
+
+				a {
+
+					img {
+						width: 13.438vw * $coefficient;
+					}
+				}
+			}
+
+			.header_main-nav {
+				display: none;
+
+				.nav-menu {
+					font-size: 0.938vw;
+					line-height: 1.146vw;
+
+
+					.sub-menu {
+						top: 3vw;
+						left: 0;
+						min-width: 100vw;
+						min-height: 22.656vw;
+					}
+
+					a {
+						padding: 0.729vw 0.729vw;
+					}
+
+					.nav:hover .sub-menu {
+						display: block;
+					}
+
+					a:hover {
+						border-bottom: 0.150vw solid #1F316A;
+					}
+
+
+
+
+					.deactive {
+						color: #1F316A;
+						text-decoration: none;
+						padding: 0.729vw 0.729vw;
+					}
+
+					.nav {
+						background-color: transparent;
+					}
+				}
+
+			}
+
+			.header-right {
+
+				width: 6.042vw * $coefficient;
+				height: 0.990vw * $coefficient;
+
+				.map {
+
+					margin-right: 0.573vw * $coefficient;
+
+					img {
+						width: 0.693vw * $coefficient;
+						height: 0.906vw * $coefficient;
+					}
+
+					.map-name {
+
+						font-size: 0.938vw * $coefficient;
+						line-height: 1.146vw * $coefficient;
+						padding-left: 0.401vw * $coefficient;
+
+
+
+					}
+				}
+
+				.shopping-cart {
+					display: flex;
+					align-items: center;
+
+					img {
+						width: 0.938vw * $coefficient;
+						height: 0.817vw * $coefficient;
+					}
+
+				}
+			}
+		}
+	}
+	.burger-menu {
+		//Начало бургер меню
+
+		cursor: pointer;
+		margin-right: 1.875vw * $coefficient;
+
+		.input {
+			display: flex;
+			flex-direction: column;
+
+		}
+
+		.menu-btn {
+			display: flex;
+			align-items: center;
+			position: absolute;
+			left: 1.090vw * $coefficient;
+			right: 97.760vw * $coefficient;
+			top: 1.443vw * $coefficient;
+			z-index: 1;
+		}
+
+		.menu-btn>span,
+		.menu-btn>span::before,
+		.menu-btn>span::after {
+			display: block;
+			position: absolute;
+			width: 1.146vw * $coefficient;
+			height: 0.104vw * $coefficient;
+			background-color: #1F316A;
+			transition-duration: .25s;
+			cursor: pointer;
+		}
+
+		.menu-btn>span::before {
+			content: '';
+			top: -0.417vw * $coefficient;
+		}
+
+		.menu-btn>span::after {
+			content: '';
+			top: 0.417vw * $coefficient;
+		}
+
+		.menubox {
+			display: block;
+			position: fixed;
+			visibility: hidden;
+			top: 0;
+			left: -100vw;
+			width: 15.625vw * $coefficient;
+			height: 100vw;
+			margin: 0;
+			padding: 4.167vw * $coefficient 0;
+			list-style: none;
+			background-color: #ECEFF1;
+			box-shadow: 0.052vw * $coefficient 0px 0.313vw * $coefficient rgba(0, 0, 0, .2);
+			transition-duration: .25s;
+		}
+
+		.menu-item {
+			display: block;
+			padding: 0.625vw * $coefficient 1.250vw * $coefficient;
+			color: #333;
+			font-family: 'Roboto', sans-serif;
+			font-size: 1.042vw * $coefficient;
+			font-weight: 600;
+			text-decoration: none;
+			transition-duration: .25s;
+		}
+
+		.menu-item:hover {
+			background-color: #CFD8DC;
+		}
+
+
+		#menu-toggle {
+			opacity: 0;
+		}
+
+		#menu-toggle:checked~.menu-btn>span {
+			transform: rotate(45deg);
+		}
+
+		#menu-toggle:checked~.menu-btn>span::before {
+			top: 0;
+			transform: rotate(0);
+		}
+
+		#menu-toggle:checked~.menu-btn>span::after {
+			top: 0;
+			transform: rotate(90deg);
+		}
+
+		#menu-toggle:checked~.menubox {
+			visibility: visible;
+			left: 0;
+		}
+
+		//Конец бургер меню
+
+	}
+
 	footer {
 		.footer__row {
 			padding: 2.760vw * $coefficient 0 5vw * $coefficient;

@@ -25,35 +25,63 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'top-matras-shop' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$top_matras_shop_description = get_bloginfo( 'description', 'display' );
-			if ( $top_matras_shop_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $top_matras_shop_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="header-logo_burger">
+                <nav class="burger-menu">
+                    <div class="input">
+                        <input id="menu-toggle" type="checkbox" />
+                        <label class="menu-btn" for="menu-toggle">
+                            <span></span>
+                        </label>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'top-matras-shop' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+                        <?php wp_nav_menu( [
+                            'theme_location'  => 'menu-1',
+                            'container'       => null,
+                            'menu_class'      => 'menubox',
+                            'menu_id'         => '',
+                            'echo'            => true,
+                            'before'          => '',
+                            'after'           => '',
+                            'link_before'     => '',
+                            'link_after'      => '',
+                            'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                        ] );
+                        ?>
+                    </div>
+
+                </nav>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="">
+                </a>
+            </div>
+            <nav class="header_main-nav">
+
+                <?php wp_nav_menu( [
+                    'theme_location'  => 'menu-1',
+                    'container'       => null,
+                    'menu_class'      => 'nav-menu',
+                    'menu_id'         => '',
+                    'echo'            => true,
+                    'before'          => '',
+                    'after'           => '',
+                    'link_before'     => '',
+                    'link_after'      => '',
+                    'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                ] );
+                ?>
+            </nav>
+            <!---<script src="js/header_main-menu.js"></script>
+                Изменение цвета меню--->
+            <div class="header-right">
+                <a href="#" class="map">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/map.svg" alt="">
+                    <div class="map-name">Москва</div>
+                </a>
+                <a class="shopping-cart" href="#">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Vector.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+

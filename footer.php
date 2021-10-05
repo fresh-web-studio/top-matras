@@ -48,28 +48,28 @@
                         <div class="footer__column-header">Контакты</div>
                         <div class="footer__social">
                             <a href="#" target="_blank" class="hover">
-                                <img class="first" src="wp-content/themes/top-matras-shop/assets/images/icon__whatsapp.svg" alt="Иконка Whatsapp"/>
-                                <img class="second" src="wp-content/themes/top-matras-shop/assets/images/icon__whatsapp-active.svg" alt="Иконка Whatsapp"/>
+                                <img class="first" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon__whatsapp.svg" alt="Иконка Whatsapp"/>
+                                <img class="second" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon__whatsapp-active.svg" alt="Иконка Whatsapp"/>
                             </a>
                             <a href="#" target="_blank" class="hover">
-                                <img class="first" src="wp-content/themes/top-matras-shop/assets/images/facebook.svg" alt="Иконка Facebook"/>
-                                <img class="second" src="wp-content/themes/top-matras-shop/assets/images/facebook-active.svg" alt="Иконка Facebook"/>
+                                <img class="first" src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" alt="Иконка Facebook"/>
+                                <img class="second" src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook-active.svg" alt="Иконка Facebook"/>
                             </a>
                             <a href="#" target="_blank" class="hover">
-                                <img class="first" src="wp-content/themes/top-matras-shop/assets/images/twitter.svg" alt="Иконка Twitter"/>
-                                <img class="second" src="wp-content/themes/top-matras-shop/assets/images/twitter-active.svg" alt="Иконка Twitter"/>
+                                <img class="first" src="<?php echo get_template_directory_uri(); ?>/assets/images/twitter.svg" alt="Иконка Twitter"/>
+                                <img class="second" src="<?php echo get_template_directory_uri(); ?>/assets/images/twitter-active.svg" alt="Иконка Twitter"/>
                             </a>
                             <a href="#" target="_blank" class="hover">
-                                <img class="first" src="wp-content/themes/top-matras-shop/assets/images/icon__you.svg" alt="Иконка Youtube"/>
-                                <img class="second" src="wp-content/themes/top-matras-shop/assets/images/icon__you-active.svg" alt="Иконка Youtube"/>
+                                <img class="first" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon__you.svg" alt="Иконка Youtube"/>
+                                <img class="second" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon__you-active.svg" alt="Иконка Youtube"/>
                             </a>
                             <a href="#" target="_blank" class="hover">
-                                <img class="first" src="wp-content/themes/top-matras-shop/assets/images/icon__inst.svg" alt="Иконка Instagram"/>
-                                <img class="second" src="wp-content/themes/top-matras-shop/assets/images/icon__inst-active.svg" alt="Иконка Instagram"/>
+                                <img class="first" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon__inst.svg" alt="Иконка Instagram"/>
+                                <img class="second" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon__inst-active.svg" alt="Иконка Instagram"/>
                             </a>
                             <a href="#" target="_blank" class="hover">
-                                <img class="first" src="wp-content/themes/top-matras-shop/assets/images/icon__vk.svg" alt="Иконка ВК"/>
-                                <img class="second" src="wp-content/themes/top-matras-shop/assets/images/icon__vk-active.svg" alt="Иконка ВК"/>
+                                <img class="first" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon__vk.svg" alt="Иконка ВК"/>
+                                <img class="second" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon__vk-active.svg" alt="Иконка ВК"/>
                             </a>
                         </div>
                         <div class="footer__menu-link">
