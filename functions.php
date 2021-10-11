@@ -51,6 +51,7 @@ if ( ! function_exists( 'top_matras_shop_setup' ) ) :
 		register_nav_menus(
 			array(
 				'menu-1' => esc_html__( 'Primary', 'Основное меню' ),
+				'menu-2' => esc_html__( 'Secondary', 'Левое меню' ),
 			)
 		);
 
@@ -150,6 +151,11 @@ function top_matras_shop_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'top_matras_shop_scripts' );
+
+/**
+* Произвольное изображение
+ * add_image_size( 'top_matras_shop_menu_preview', 317, 206 );
+ */
 
 /**
  * Implement the Custom Header feature.

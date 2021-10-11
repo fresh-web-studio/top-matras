@@ -36,7 +36,7 @@
                         </label>
 
                         <?php wp_nav_menu( [
-                            'theme_location'  => 'menu-1',
+                            'theme_location'  => 'menu-2',
                             'container'       => null,
                             'menu_class'      => 'menubox',
                             'menu_id'         => '',

@@ -530,17 +530,13 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #4169e1;
-}
-
-a:visited {
-	color: #800080;
+	color: #1F316A;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #191970;
+	color: #1F316A;
 }
 
 a:focus {
@@ -887,11 +883,23 @@ textarea {
 /* fix Фиксированного меню */
 
 #wpadminbar + #page > .header {
-top: 2.27vw;
+top: 1.67vw;
 }
 
 /* /fix Фиксированного меню */
 
+.btn {
+	background: #1F316A;
+	border-radius: 0.260vw;
+	padding: 0.7vw 2vw;
+	font-size: 0.938vw;
+	color: white;
+}
+
+.btn:hover {
+	background: #526699;
+	color: white;
+}
 
 .header {
 	width: 100vw;
@@ -903,15 +911,17 @@ top: 2.27vw;
 	top: 0;
 	position: fixed;
 
-	.header-wrapper {
+		.header-wrapper {
 		width: 97.813vw;
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		height: 2.917vw;
-
-
+			.product-preview .woocommerce ul.product_list_widget li img {
+				width: 20vw;
+				background-color: #C4C4C4;
+			}
 
 		.header-logo_burger {
 			display: flex;
@@ -1204,6 +1214,15 @@ footer {
 
 @media all and (max-width: 1366px) {
 	$coefficient: 1.4;
+
+	/* fix Фиксированного меню */
+
+	#wpadminbar + #page > .header {
+		top: 1.67vw * $coefficient;
+	}
+
+	/* /fix Фиксированного меню */
+
 	.container {
 		width: 100vw;
 		padding: 0 1.464vw;
@@ -1339,9 +1358,18 @@ footer {
 
 @media all and (max-width: 415px) {
 	$coefficient: 4;
+
+
 	.container {
 		padding: 0 3.614vw;
 	}
+	/* fix Фиксированного меню */
+
+	#wpadminbar + #page > .header {
+		top: 0;
+	}
+
+	/* /fix Фиксированного меню */
 	.header {
 		width: 100vw;
 		-webkit-box-shadow: 0 0.260vw * $coefficient 1.302vw * $coefficient rgba(0, 0, 0, 0.15);
