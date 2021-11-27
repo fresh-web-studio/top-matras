@@ -17,7 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
     <script src="https://kit.fontawesome.com/523b48a842.js" crossorigin="anonymous"></script>
-	<?php wp_head(); ?>
+    <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -28,30 +28,35 @@
     <header class="header">
         <div class="header-wrapper">
             <div class="header-logo_burger">
-                <nav class="burger-menu">
-                    <div class="input">
-                        <input id="menu-toggle" type="checkbox" />
-                        <label class="menu-btn" for="menu-toggle">
-                            <span></span>
-                        </label>
-
-                        <?php wp_nav_menu( [
-                            'theme_location'  => 'menu-2',
-                            'container'       => null,
-                            'menu_class'      => 'menubox',
-                            'menu_id'         => '',
-                            'echo'            => true,
-                            'before'          => '',
-                            'after'           => '',
-                            'link_before'     => '',
-                            'link_after'      => '',
-                            'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                        ] );
-                        ?>
+                <a href="#menu" id="mmenu-icon" class="hamburger hamburger--spin">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
                     </div>
-
+                </a>
+                <nav id="menu">
+                    <ul>
+                        <li><span>Матрасы</span>
+                            <ul>
+                                <li><a href="/about/history">Беспружинные матрасы <div class="discount-menu"><span>15%
+                                                OFF</span></div></a></li>
+                                <li><a href="/about/history">Зависимые матрасы <div class="discount-menu"><span>15%
+                                                OFF</span></div></a></li>
+                                <li><a href="/about/history">Пружинные матрасы <div class="discount-menu"><span>15%
+                                                OFF</span></div></a></li>
+                                <a href="#" class="menu-link-button">Посмотреть все матрасы</a>
+                                <div class="menu-image-title">Оригинальный матрас</div>
+                                <a class="menu-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/000.jpg" alt=""></a>
+                            </ul>
+                        </li>
+                        <li><span>Топперы</span></li>
+                        <li><span>Боксы кровати</span></li>
+                        <li><span>Ортопедические основания</span></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
                 </nav>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="logo">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="">
                 </a>
             </div>
@@ -78,7 +83,7 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/map.svg" alt="">
                     <div class="map-name">Москва</div>
                 </a>
-                <a class="shopping-cart" href="#">
+                <a class="shopping-cart" href="http://localhost:8888/top-matras.shop/cart/">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Vector.svg" alt="">
                 </a>
             </div>

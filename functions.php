@@ -103,6 +103,7 @@ if ( ! function_exists( 'top_matras_shop_setup' ) ) :
 		);
 	}
 endif;
+
 add_action( 'after_setup_theme', 'top_matras_shop_setup' );
 
 /**
@@ -140,15 +141,25 @@ add_action( 'widgets_init', 'top_matras_shop_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
+
 function top_matras_shop_scripts() {
-	wp_enqueue_style( 'top-matras-shop-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'top-matras-shop-style', 'rtl', 'replace' );
+    wp_enqueue_style( 'mmenu-css', get_template_directory_uri() . '/assets/css/mmenu.css', array(), _S_VERSION );
+    wp_enqueue_style( 'hamburgers-css', get_template_directory_uri() . '/assets/css/hamburgers.css', array(), _S_VERSION );
+    wp_enqueue_style( 'style-css', get_template_directory_uri() . '/assets/css/style.css', array(), _S_VERSION );
+    wp_enqueue_style( 'top-matras-shop-style', get_stylesheet_uri(), array(), _S_VERSION );
+    wp_style_add_data( 'top-matras-shop-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'top-matras-shop-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'top-matras-shop-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'mmenu-js', get_template_directory_uri() . '/assets/js/mmenu.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'jquery-22', get_template_directory_uri() . '/assets/js/jquery-2.2.0.min.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'slick-settings-js', get_template_directory_uri() . '/assets/js/slick.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'slick3-settings-js', get_template_directory_uri() . '/assets/js/slick3.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'second-page-settings-js', get_template_directory_uri() . '/assets/js/second-page-reviews.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'all-settings-js', get_template_directory_uri() . '/assets/js/all-settings.js', array(), _S_VERSION, true );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+        wp_enqueue_script( 'comment-reply' );
+    }
 }
 add_action( 'wp_enqueue_scripts', 'top_matras_shop_scripts' );
 
@@ -184,3 +195,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/assets/inc/jetpack.php';
 }
 
+
+/**
+* Хлебные крошки
+ **/
+/*add_action( 'woocommerce_before_single_product_summary', 'woocommerce_breadcrumb', 5, 0 );*/
