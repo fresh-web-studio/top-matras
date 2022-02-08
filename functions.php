@@ -199,4 +199,12 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /**
 * Хлебные крошки
  **/
-/*add_action( 'woocommerce_before_single_product_summary', 'woocommerce_breadcrumb', 5, 0 );*/
+if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+    function mytheme_add_woocommerce_support() {
+        add_theme_support( 'woocommerce' );
+    }
+    add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+} else {
+    echo 'WooCommerce is not Active.';
+}
+
