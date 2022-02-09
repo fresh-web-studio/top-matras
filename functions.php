@@ -146,6 +146,8 @@ function top_matras_shop_scripts() {
     wp_enqueue_style( 'mmenu-css', get_template_directory_uri() . '/assets/css/mmenu.css', array(), _S_VERSION );
     wp_enqueue_style( 'hamburgers-css', get_template_directory_uri() . '/assets/css/hamburgers.css', array(), _S_VERSION );
     wp_enqueue_style( 'style-css', get_template_directory_uri() . '/assets/css/style.css', array(), _S_VERSION );
+/*    wp_enqueue_style( 'old-style-css', get_template_directory_uri() . '/assets/css/old/style.css', array(), _S_VERSION );*/
+    wp_enqueue_style( 'woodcommerce', get_template_directory_uri() . '/assets/css/woodcommerce.css', array(), _S_VERSION );
     wp_enqueue_style( 'top-matras-shop-style', get_stylesheet_uri(), array(), _S_VERSION );
     wp_style_add_data( 'top-matras-shop-style', 'rtl', 'replace' );
 
@@ -199,6 +201,12 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /**
 * Хлебные крошки
  **/
+
+/**
+ * Woocommerce
+ **/
+
+// Woocommerce support
 if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
     function mytheme_add_woocommerce_support() {
         add_theme_support( 'woocommerce' );
@@ -206,5 +214,24 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
     add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 } else {
     echo 'WooCommerce is not Active.';
+}
+
+/**
+ * Change the breadcrumb separator
+ */
+add_filter( 'woocommerce_breadcrumb_defaults', 'wcc_change_breadcrumb_delimiter' );
+function wcc_change_breadcrumb_delimiter( $defaults ) {
+    // Change the breadcrumb delimeter from '/' to '>'
+    $defaults['delimiter'] = ' &#8250; ';
+    return $defaults;
+}
+add_filter( 'woocommerce_breadcrumb_defaults', 'wcc_change_breadcrumb_delimiter', 20 );
+
+//Remove sidebar woocommerce
+add_action('woocommerce_before_main_content', 'remove_sidebar');
+function remove_sidebar() {
+    if (is_shop()) {
+        remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
+    }
 }
 

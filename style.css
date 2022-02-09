@@ -1059,58 +1059,6 @@ textarea {
   background-size: 100%;
   cursor: pointer; }
 
-footer {
-  color: white; }
-  footer a {
-    color: white; }
-    footer a:hover {
-      color: #EFCA58; }
-  footer .footer__main {
-    background-color: #1F316A; }
-  footer .footer__row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 2.760vw 0 5vw; }
-  footer .footer__column {
-    width: 25%; }
-  footer .footer__column-header {
-    font-weight: bold;
-    font-size: 1.198vw;
-    padding-bottom: 1.354vw; }
-  footer .footer__menu-link {
-    font-size: 0.938vw;
-    line-height: 2vw; }
-  footer .footer__social {
-    margin-bottom: 0.521vw; }
-  footer .first, footer .second {
-    border: 0.16vw solid transparent;
-    margin: 0;
-    padding: 0;
-    width: 2.135vw;
-    height: 2.135vw; }
-  footer .first {
-    opacity: 1;
-    /*display: block;*/
-    position: absolute;
-    z-index: 100;
-    transition-duration: 1s;
-    -webkit-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    -ms-transition-duration: 1s; }
-  footer .first:hover {
-    opacity: 0.00; }
-  footer .footer__copyright {
-    background-color: #526699;
-    font-size: 0.833vw; }
-  footer .footer__row-copyright {
-    display: flex;
-    align-items: center;
-    height: 2.813vw; }
-  footer .year {
-    margin: 0 0.625vw; }
-
 @media all and (max-width: 1366px) {
   /* fix Фиксированного меню */
   #wpadminbar + #page > .header {

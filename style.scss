@@ -1278,75 +1278,7 @@ top: 1.67vw;
 }
 
 
-footer {
-	color: white;
-	a {
-		color: white;
-		&:hover {
-			color: $yellow;
-		}
-	}
-	.footer__main {
-		background-color: $blue;
-	}
-	.footer__row {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		padding: 2.760vw 0 5vw;
-	}
-	.footer__column {
-		width: 25%;
-	}
-	.footer__column-header {
-		font-weight: bold;
-		font-size: 1.198vw;
-		padding-bottom: 1.354vw;
-	}
-	.footer__menu-link {
-		font-size: 0.938vw;
-		line-height: 2vw;
-	}
-	.footer__social {
-		margin-bottom: 0.521vw;
-	}
 
-	.first, .second {
-		border: 0.16vw solid transparent;
-		margin: 0;
-		padding: 0;
-		width: 2.135vw;
-		height: 2.135vw;
-	}
-
-	.first {
-		opacity: 1;
-		/*display: block;*/
-		position: absolute;
-		z-index: 100;
-		transition-duration: 1s;
-		-webkit-transition-duration: 1s;
-		-moz-transition-duration: 1s;
-		-o-transition-duration: 1s;
-		-ms-transition-duration: 1s;
-	}
-
-	.first:hover {
-		opacity: 0.00;
-	}
-	.footer__copyright {
-		background-color: $pale-blue;
-		font-size: 0.833vw;
-	}
-	.footer__row-copyright {
-		display: flex;
-		align-items: center;
-		height: 2.813vw;
-	}
-	.year {
-		margin: 0 0.625vw;
-	}
-}
 
 @media all and (max-width: 1366px) {
 	$coefficient: 1.4;
@@ -1955,6 +1887,8 @@ footer {
 			}
 		}
 	}
+
+
 
 
 	footer {
