@@ -43,31 +43,38 @@ do_action( 'woocommerce_before_main_content' );
 	 */
 	do_action( 'woocommerce_archive_description' );
 	?>
+
 </header>
 <?php
 if ( woocommerce_product_loop() ) {
+    ?>
+    <div class="site-main-line">
+        <?php
+        /**
+         * Hook: woocommerce_before_shop_loop.
+         *
+         * @hooked woocommerce_output_all_notices - 10
+         * @hooked woocommerce_result_count - 20
+         * @hooked woocommerce_catalog_ordering - 30
+         */
+        do_action( 'woocommerce_before_shop_loop' );
+        ?>
+    </div>
 
-	/**
-	 * Hook: woocommerce_before_shop_loop.
-	 *
-	 * @hooked woocommerce_output_all_notices - 10
-	 * @hooked woocommerce_result_count - 20
-	 * @hooked woocommerce_catalog_ordering - 30
-	 */
-	do_action( 'woocommerce_before_shop_loop' );
-
+    <?php
 	woocommerce_product_loop_start();
 
 	if ( wc_get_loop_prop( 'total' ) ) {
 		while ( have_posts() ) {
 			the_post();
 
-			/**
-			 * Hook: woocommerce_shop_loop.
-			 */
-			do_action( 'woocommerce_shop_loop' );
+                    /**
+                     * Hook: woocommerce_shop_loop.
+                     */
+                    do_action( 'woocommerce_shop_loop' );
 
-			wc_get_template_part( 'content', 'product' );
+                    wc_get_template_part( 'content', 'product' );
+
 		}
 	}
 

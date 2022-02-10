@@ -6679,15 +6679,6 @@ svg {
     margin-bottom: 12.448vw;
   }
 
-  .catalog-title {
-    font-size: 1.875vw;
-    font-weight: 700;
-    line-height: 2.292vw;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #1F316A;
-  }
-
   .catalog-wrapper {
     width: 77.708vw;
     margin: 0 auto;
@@ -11191,12 +11182,6 @@ svg {
     margin-bottom: 12.448vw * $coefficient;
   }
 
-  .catalog-title {
-    font-size: 1.875vw * $coefficient;
-    line-height: 2.292vw * $coefficient;
-    letter-spacing: 0em;
-  }
-
   .catalog-wrapper {
     width: 75vw * $coefficient;
     margin: 0 auto;
@@ -11439,6 +11424,12 @@ svg {
             width: 13.438vw * $coefficient;
           }
         }
+      }
+
+      .border-divider {
+        display: block;
+        width: 100%;
+        border-bottom: 0.482vw solid #1F316A;
       }
 
       .header_main-nav {
@@ -15918,12 +15909,6 @@ svg {
   .catalog-main {
     margin-top: 6.250vw * $coefficient;
     margin-bottom: 12.448vw * $coefficient;
-  }
-
-  .catalog-title {
-    font-size: 1.875vw * $coefficient;
-    line-height: 2.292vw * $coefficient;
-    letter-spacing: 0em;
   }
 
   .catalog-wrapper {

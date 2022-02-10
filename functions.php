@@ -145,9 +145,10 @@ add_action( 'widgets_init', 'top_matras_shop_widgets_init' );
 function top_matras_shop_scripts() {
     wp_enqueue_style( 'mmenu-css', get_template_directory_uri() . '/assets/css/mmenu.css', array(), _S_VERSION );
     wp_enqueue_style( 'hamburgers-css', get_template_directory_uri() . '/assets/css/hamburgers.css', array(), _S_VERSION );
-    wp_enqueue_style( 'style-css', get_template_directory_uri() . '/assets/css/style.css', array(), _S_VERSION );
+    wp_enqueue_style( 'style-css', get_template_directory_uri() . '/assets/css/style-html.css', array(), _S_VERSION );
 /*    wp_enqueue_style( 'old-style-css', get_template_directory_uri() . '/assets/css/old/style.css', array(), _S_VERSION );*/
     wp_enqueue_style( 'woodcommerce', get_template_directory_uri() . '/assets/css/woodcommerce.css', array(), _S_VERSION );
+    wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.css', array(), _S_VERSION );
     wp_enqueue_style( 'top-matras-shop-style', get_stylesheet_uri(), array(), _S_VERSION );
     wp_style_add_data( 'top-matras-shop-style', 'rtl', 'replace' );
 
@@ -230,8 +231,17 @@ add_filter( 'woocommerce_breadcrumb_defaults', 'wcc_change_breadcrumb_delimiter'
 //Remove sidebar woocommerce
 add_action('woocommerce_before_main_content', 'remove_sidebar');
 function remove_sidebar() {
-    if (is_shop()) {
+    if (is_woocommerce()) {
         remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
     }
 }
 
+//Remove link
+remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5);
+add_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_link_close', 15);
+
+//Remove link
+remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
+
+//Hover cart
+add_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10  );

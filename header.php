@@ -29,9 +29,7 @@
         <div class="header-wrapper">
             <div class="header-logo_burger">
                 <a href="#menu" id="mmenu-icon" class="hamburger hamburger--spin">
-                    <div class="hamburger-box">
-                        <div class="hamburger-inner"></div>
-                    </div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top-menu__burger.svg" alt="Бургер">
                 </a>
                 <nav id="menu">
                     <ul>
@@ -60,6 +58,7 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="">
                 </a>
             </div>
+            <div class="border-divider"></div>
             <nav class="header_main-nav">
 
                 <?php wp_nav_menu( [

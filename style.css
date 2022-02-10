@@ -1439,8 +1439,8 @@ textarea {
     -webkit-box-shadow: 0 1.04vw 5.208vw rgba(0, 0, 0, 0.15);
     box-shadow: 0 1.04vw 5.208vw rgba(0, 0, 0, 0.15); }
     .header .header-wrapper {
-      width: 97.813vw;
-      height: 11.668vw; }
+      width: 100vw;
+      height: 24.506vw; }
       .header .header-wrapper .header-logo_burger {
         margin-top: 1.46vw; }
         .header .header-wrapper .header-logo_burger .header__nav {

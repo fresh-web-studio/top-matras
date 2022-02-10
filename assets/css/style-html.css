@@ -5190,14 +5190,6 @@ svg {
     margin-top: 6.250vw;
     margin-bottom: 12.448vw; }
 
-  .catalog-title {
-    font-size: 1.875vw;
-    font-weight: 700;
-    line-height: 2.292vw;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #1F316A; }
-
   .catalog-wrapper {
     width: 77.708vw;
     margin: 0 auto;
@@ -8463,11 +8455,6 @@ svg {
     margin-top: 8.75vw;
     margin-bottom: 17.4272vw; }
 
-  .catalog-title {
-    font-size: 2.625vw;
-    line-height: 3.2088vw;
-    letter-spacing: 0em; }
-
   .catalog-wrapper {
     width: 105vw;
     margin: 0 auto;
@@ -8612,6 +8599,10 @@ svg {
           font-weight: 600; }
           .header .header-wrapper .header-logo_burger a img {
             width: 53.752vw; }
+      .header .header-wrapper .border-divider {
+        display: block;
+        width: 100%;
+        border-bottom: 0.482vw solid #1F316A; }
       .header .header-wrapper .header_main-nav {
         display: none; }
         .header .header-wrapper .header_main-nav .nav-menu {
@@ -11938,11 +11929,6 @@ svg {
     margin-top: 25vw;
     margin-bottom: 49.792vw; }
 
-  .catalog-title {
-    font-size: 7.5vw;
-    line-height: 9.168vw;
-    letter-spacing: 0em; }
-
   .catalog-wrapper {
     width: 92.771vw;
     margin: 0 auto;
@@ -12067,4 +12053,4 @@ svg {
   .mattress-parameters-wrapper-mobile {
     flex-direction: row; } }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style-html.css.map */
