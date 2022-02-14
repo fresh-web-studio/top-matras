@@ -58,7 +58,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 100%;
   }
   .hover-cart {
     width: 18.589vw;
@@ -114,7 +114,16 @@
     background-color: #1e306e !important;
     color: white !important;
   }
-
+  .woocommerce-page div.product div.images {
+    width: 52.708vw;
+  }
+  .woocommerce-page div.product div.summary {
+    float: left;
+    width: 25vw;
+  }
+  .woocommerce-page div.product .woocommerce-tabs {
+    width: 77.708vw;
+  }
 }
 
 @media all and (max-width: 1366px) {
@@ -161,6 +170,8 @@
     border-radius: 1.667vw * $coefficient;
     -webkit-box-shadow: #1e306e 0 0 0 0.21vw inset;
   }
+
+
 
 }
 
