@@ -340,7 +340,7 @@ svg {
     width: 23vw;
     height: auto;
     transition: box-shadow 0.3s ease-in-out 0s,
-    border-radius 0.3s ease-in-out 0s;
+      border-radius 0.3s ease-in-out 0s;
   }
 
 
@@ -1564,9 +1564,9 @@ svg {
   .main-slider:hover .slick-arrow {
     opacity: 1;
     box-shadow: rgb(242, 242, 242) 0 0.260vw 0.781vw 0,
-    rgb(247, 247, 247) 0 0 0 0.052vw,
-    rgb(242, 242, 242) 0 0.052vw 0 0,
-    rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
+      rgb(247, 247, 247) 0 0 0 0.052vw,
+      rgb(242, 242, 242) 0 0.052vw 0 0,
+      rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
   }
 
 
@@ -1747,9 +1747,6 @@ svg {
     padding: 0;
     margin: 0;
     left: 46.2vw;
-    width: 10vw;
-    display: flex !important;
-    justify-content: space-between;
 
     li {
       position: relative;
@@ -1760,6 +1757,7 @@ svg {
       opacity: .2;
       cursor: pointer;
       border: solid gray;
+      margin-right: 1vw;
 
       button {
         border: 0;
@@ -1959,8 +1957,8 @@ svg {
   }
 
   .slider {
-    width: 50%;
-    margin: 5.208vw 1.198vw;
+    width: 100%;
+    /*margin: 5.208vw 1.198vw;*/
   }
 
   .reviews-items.slider {
@@ -2172,6 +2170,7 @@ svg {
   .first-regular {
     width: 43.021vw !important;
     position: relative;
+    margin: 10.408vw 1.198vw;
   }
 
   .reviews {
@@ -2253,7 +2252,7 @@ svg {
   }
 
   .second-regular {
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     width: 23.542vw !important;
@@ -2261,9 +2260,6 @@ svg {
   }
 
   .second-reviews {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     transform: translateY(0%);
     transition: opacity 0.3s ease-in-out 0s;
     width: 100%;
@@ -2405,9 +2401,9 @@ svg {
   .second-slider:hover .slick-arrow {
     opacity: 1;
     box-shadow: rgb(242, 242, 242) 0 0.260vw 0.781vw 0,
-    rgb(247, 247, 247) 0 0 0 0.052vw,
-    rgb(242, 242, 242) 0 0.052vw 0 0,
-    rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
+      rgb(247, 247, 247) 0 0 0 0.052vw,
+      rgb(242, 242, 242) 0 0.052vw 0 0,
+      rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
   }
 
   .first-regular .slick-arrow {
@@ -2580,14 +2576,14 @@ svg {
 
   /* Dots */
 
-  .slick-dotted.slick-slider {
+  .second-slider .slick-dotted.slick-slider {
     margin-bottom: 1.563vw;
     width: 38.5vw;
   }
 
   .first-regular .slick-dots {
     position: absolute;
-    bottom: 5.87vw;
+    bottom: 0.77vw;
     left: 3.8vw;
     list-style: none;
     display: flex;
@@ -3271,9 +3267,9 @@ svg {
   .slider-сarousel:hover .slick-arrow {
     opacity: 1;
     box-shadow: rgb(242, 242, 242) 0 0.260vw 0.781vw 0,
-    rgb(247, 247, 247) 0 0 0 0.052vw,
-    rgb(242, 242, 242) 0 0.052vw 0 0,
-    rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
+      rgb(247, 247, 247) 0 0 0 0.052vw,
+      rgb(242, 242, 242) 0 0.052vw 0 0,
+      rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
   }
 
 
@@ -3428,9 +3424,9 @@ svg {
     color: rgb(21, 21, 21);
     background: rgb(255, 255, 255);
     box-shadow: rgb(242, 242, 242) 0 0.260vw 0.781vw 0,
-    rgb(247, 247, 247) 0 0 0 0.052vw,
-    rgb(242, 242, 242) 0 0.052vw 0 0,
-    rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
+      rgb(247, 247, 247) 0 0 0 0.052vw,
+      rgb(242, 242, 242) 0 0.052vw 0 0,
+      rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
     transition: background-color 0.15s ease-out 0s, color 0.15s ease-out 0s, box-shadow 0.15s ease-out 0s;
     margin-top: 1.250vw;
   }
@@ -3438,9 +3434,9 @@ svg {
   .ready-button .button:hover {
     color: rgb(82, 102, 153);
     box-shadow: rgb(242, 242, 242) 0 0.260vw 0.781vw 0,
-    rgb(247, 247, 247) 0 0 0 0.052vw,
-    rgb(230, 230, 230) 0 0.104vw 0.052vw 0,
-    rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
+      rgb(247, 247, 247) 0 0 0 0.052vw,
+      rgb(230, 230, 230) 0 0.104vw 0.052vw 0,
+      rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
   }
 
   //categories-page
@@ -4432,9 +4428,9 @@ svg {
   #product-detail__tab li {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0.260vw 0.781vw 0px,
-    rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw,
-    rgba(0, 0, 0, 0.05) 0px 0.052vw 0px 0px,
-    rgba(0, 0, 0, 0.01) 0px 0.052vw 0.156vw 0px;
+      rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw,
+      rgba(0, 0, 0, 0.05) 0px 0.052vw 0px 0px,
+      rgba(0, 0, 0, 0.01) 0px 0.052vw 0.156vw 0px;
     border-radius: 0.208vw;
   }
 
@@ -4902,9 +4898,9 @@ svg {
   .reviews-items:hover .slick-arrow {
     opacity: 1;
     box-shadow: rgb(242, 242, 242) 0 0.260vw 0.781vw 0,
-    rgb(247, 247, 247) 0 0 0 0.052vw,
-    rgb(242, 242, 242) 0 0.052vw 0 0,
-    rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
+      rgb(247, 247, 247) 0 0 0 0.052vw,
+      rgb(242, 242, 242) 0 0.052vw 0 0,
+      rgb(252, 252, 252) 0 0.052vw 0.156vw 0;
   }
 
 
@@ -4950,9 +4946,9 @@ svg {
   #myTab li {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0.260vw 0.781vw 0px,
-    rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw,
-    rgba(0, 0, 0, 0.05) 0px 0.052vw 0px 0px,
-    rgba(0, 0, 0, 0.01) 0px 0.052vw 0.156vw 0px;
+      rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw,
+      rgba(0, 0, 0, 0.05) 0px 0.052vw 0px 0px,
+      rgba(0, 0, 0, 0.01) 0px 0.052vw 0.156vw 0px;
     border-radius: 0.208vw;
   }
 
@@ -5729,8 +5725,8 @@ svg {
     width: 20.833vw;
     font-size: 1.667vw;
     box-shadow: rgb(242, 242, 242) 0px 0.052vw 0px,
-    rgb(230, 230, 230) 0px 0.052vw 0.104vw,
-    rgb(242, 242, 242) 0px 0.260vw 0.781vw;
+      rgb(230, 230, 230) 0px 0.052vw 0.104vw,
+      rgb(242, 242, 242) 0px 0.260vw 0.781vw;
   }
 
 
@@ -5741,8 +5737,8 @@ svg {
   .btn.btn-primary:hover,
   .btn.btn-primary:focus {
     box-shadow: rgb(242, 242, 242) 0px 0.260vw 0.781vw,
-    rgb(230, 230, 230) 0px 0.260vw 0.260vw,
-    rgb(242, 242, 242) 0px 0.104vw 0.260vw;
+      rgb(230, 230, 230) 0px 0.260vw 0.260vw,
+      rgb(242, 242, 242) 0px 0.104vw 0.260vw;
   }
 
   .submitWrapper {
@@ -7748,9 +7744,6 @@ svg {
     padding: 0;
     margin: 0;
     left: 45vw;
-    width: 10vw * $coefficient;
-    display: flex !important;
-    justify-content: space-between;
 
     li {
       position: relative;
@@ -7761,6 +7754,7 @@ svg {
       opacity: .2;
       cursor: pointer;
       border: solid gray;
+      margin-right: 1vw * $coefficient;
 
       button {
         border: 0;
@@ -7916,8 +7910,8 @@ svg {
   * {}
 
   .slider {
-    width: 50%;
-    margin: 5.208vw * $coefficient 1.198vw * $coefficient;
+    width: 100%;
+    //margin: 5.208vw * $coefficient 1.198vw * $coefficient;
   }
 
   .slick-slide {
@@ -7962,7 +7956,7 @@ svg {
 
   .second-regular .draggable {
     width: 19.494vw * $coefficient;
-    height: 26.6vw * $coefficient;
+    height: 26.8vw * $coefficient;
   }
 
   .second-regular .slick-slide {
@@ -8063,9 +8057,12 @@ svg {
 
   .first-regular {
     width: 43.021vw * $coefficient !important;
+    margin: 0;
   }
 
   .reviews {
+    margin-top: 0;
+    margin-left: 2vw;
 
     ul {
       width: 5.768vw * $coefficient;
@@ -8115,6 +8112,8 @@ svg {
     margin-top: 8.854vw * $coefficient !important;
   }
 
+
+
   .second-reviews {
     width: 100%;
     height: 100%;
@@ -8151,6 +8150,7 @@ svg {
       }
     }
   }
+
 
   .reviews-decoration-button:hover {}
 
@@ -8206,7 +8206,7 @@ svg {
     display: none;
   }
 
-  .slick-dotted.slick-slider {
+  .second-slider .slick-dotted.slick-slider {
     margin-bottom: 1.563vw * $coefficient;
     width: 38.5vw * $coefficient;
   }
@@ -8214,7 +8214,7 @@ svg {
   .first-regular .slick-dots {
     position: absolute;
     bottom: 4.87vw * $coefficient;
-    left: 4.23vw * $coefficient;
+    left: 5vw * $coefficient;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -8762,9 +8762,9 @@ svg {
     color: rgb(21, 21, 21);
     background: rgb(255, 255, 255);
     box-shadow: rgb(242, 242, 242) 0 0.260vw * $coefficient 0.781vw * $coefficient 0,
-    rgb(247, 247, 247) 0 0 0 0.052vw * $coefficient,
-    rgb(242, 242, 242) 0 0.052vw * $coefficient 0 0,
-    rgb(252, 252, 252) 0 0.052vw * $coefficient 0.156vw * $coefficient 0;
+      rgb(247, 247, 247) 0 0 0 0.052vw * $coefficient,
+      rgb(242, 242, 242) 0 0.052vw * $coefficient 0 0,
+      rgb(252, 252, 252) 0 0.052vw * $coefficient 0.156vw * $coefficient 0;
     transition: background-color 0.15s ease-out 0s, color 0.15s ease-out 0s, box-shadow 0.15s ease-out 0s;
     margin-top: 1.250vw * $coefficient;
   }
@@ -8772,9 +8772,9 @@ svg {
   .ready-button .button:hover {
     color: rgb(82, 102, 153);
     box-shadow: rgb(242, 242, 242) 0 0.260vw * $coefficient 0.781vw * $coefficient 0,
-    rgb(247, 247, 247) 0 0 0 0.052vw * $coefficient,
-    rgb(230, 230, 230) 0 0.104vw 0.052vw * $coefficient 0,
-    rgb(252, 252, 252) 0 0.052vw * $coefficient 0.156vw * $coefficient 0;
+      rgb(247, 247, 247) 0 0 0 0.052vw * $coefficient,
+      rgb(230, 230, 230) 0 0.104vw 0.052vw * $coefficient 0,
+      rgb(252, 252, 252) 0 0.052vw * $coefficient 0.156vw * $coefficient 0;
   }
 
   .categories-container {
@@ -9335,9 +9335,9 @@ svg {
 
   #product-detail__tab li {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0.260vw * $coefficient 0.781vw * $coefficient 0px,
-    rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw * $coefficient,
-    rgba(0, 0, 0, 0.05) 0px 0.052vw * $coefficient 0px 0px,
-    rgba(0, 0, 0, 0.01) 0px 0.052vw * $coefficient 0.156vw * $coefficient 0px;
+      rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw * $coefficient,
+      rgba(0, 0, 0, 0.05) 0px 0.052vw * $coefficient 0px 0px,
+      rgba(0, 0, 0, 0.01) 0px 0.052vw * $coefficient 0.156vw * $coefficient 0px;
     border-radius: 0.208vw * $coefficient;
   }
 
@@ -9642,9 +9642,9 @@ svg {
 
   .reviews-items:hover .slick-arrow {
     box-shadow: rgb(242, 242, 242) 0 0.260vw * $coefficient 0.781vw * $coefficient 0,
-    rgb(247, 247, 247) 0 0 0 0.052vw * $coefficient,
-    rgb(242, 242, 242) 0 0.052vw * $coefficient 0 0,
-    rgb(252, 252, 252) 0 0.052vw * $coefficient 0.156vw * $coefficient 0;
+      rgb(247, 247, 247) 0 0 0 0.052vw * $coefficient,
+      rgb(242, 242, 242) 0 0.052vw * $coefficient 0 0,
+      rgb(252, 252, 252) 0 0.052vw * $coefficient 0.156vw * $coefficient 0;
   }
 
 
@@ -9689,9 +9689,9 @@ svg {
 
   #myTab li {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0.260vw * $coefficient 0.781vw * $coefficient 0px,
-    rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw * $coefficient,
-    rgba(0, 0, 0, 0.05) 0px 0.052vw * $coefficient 0px 0px,
-    rgba(0, 0, 0, 0.01) 0px 0.052vw * $coefficient 0.156vw * $coefficient 0px;
+      rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw * $coefficient,
+      rgba(0, 0, 0, 0.05) 0px 0.052vw * $coefficient 0px 0px,
+      rgba(0, 0, 0, 0.01) 0px 0.052vw * $coefficient 0.156vw * $coefficient 0px;
     border-radius: 0.208vw * $coefficient;
   }
 
@@ -10164,8 +10164,8 @@ svg {
     width: 20.833vw * $coefficient;
     font-size: 1.667vw * $coefficient;
     box-shadow: rgb(242, 242, 242) 0px 0.052vw * $coefficient 0px,
-    rgb(230, 230, 230) 0px 0.052vw * $coefficient 0.104vw * $coefficient,
-    rgb(242, 242, 242) 0px 0.260vw * $coefficient 0.781vw * $coefficient;
+      rgb(230, 230, 230) 0px 0.052vw * $coefficient 0.104vw * $coefficient,
+      rgb(242, 242, 242) 0px 0.260vw * $coefficient 0.781vw * $coefficient;
   }
 
 
@@ -10176,8 +10176,8 @@ svg {
   .btn.btn-primary:hover,
   .btn.btn-primary:focus {
     box-shadow: rgb(242, 242, 242) 0px 0.260vw * $coefficient 0.781vw * $coefficient,
-    rgb(230, 230, 230) 0px 0.260vw * $coefficient 0.260vw * $coefficient,
-    rgb(242, 242, 242) 0px 0.104vw * $coefficient 0.260vw * $coefficient;
+      rgb(230, 230, 230) 0px 0.260vw * $coefficient 0.260vw * $coefficient,
+      rgb(242, 242, 242) 0px 0.104vw * $coefficient 0.260vw * $coefficient;
   }
 
   .submitWrapper {
@@ -12200,10 +12200,8 @@ svg {
     text-align: center;
     padding: 0;
     margin: 0;
-    left: 34vw;
-    width: 10vw * $coefficient;
-    display: flex !important;
-    justify-content: space-between;
+    left: 40vw;
+    width: 0;
 
     li {
       position: relative;
@@ -12214,6 +12212,7 @@ svg {
       opacity: .2;
       cursor: pointer;
       border: solid gray;
+      margin-right: 1vw * $coefficient;
 
       button {
         border: 0;
@@ -12239,7 +12238,7 @@ svg {
           position: absolute;
           top: 0;
           left: 0;
-          content: $slick-dot-character;
+          content: none;
           width: 20px;
           font-family: $slick-font-family;
           font-size: $slick-dot-size;
@@ -12387,7 +12386,7 @@ svg {
   * {}
 
   .slider {
-    width: 50%;
+    width: 100%;
     margin: 0;
   }
 
@@ -12552,11 +12551,12 @@ svg {
 
   .first-regular {
     width: 43.021vw * $coefficient !important;
+    margin: 0;
   }
 
   .reviews {
-
-
+    margin-top: 0;
+    margin-left: 0;
 
     ul {
       width: 5.768vw * $coefficient;
@@ -12718,7 +12718,7 @@ svg {
     left: 0.723vw !important;
   }
 
-  .slick-dotted.slick-slider {
+  .second-slider .slick-dotted.slick-slider {
     margin-bottom: 1.563vw * $coefficient;
     width: 38.5vw * $coefficient;
   }
@@ -13292,9 +13292,9 @@ svg {
   .ready-button .button:hover {
     color: rgb(82, 102, 153);
     box-shadow: rgb(242, 242, 242) 0 0.260vw * $coefficient 0.781vw * $coefficient 0,
-    rgb(247, 247, 247) 0 0 0 0.052vw * $coefficient,
-    rgb(230, 230, 230) 0 0.104vw 0.052vw * $coefficient 0,
-    rgb(252, 252, 252) 0 0.052vw * $coefficient 0.156vw * $coefficient 0;
+      rgb(247, 247, 247) 0 0 0 0.052vw * $coefficient,
+      rgb(230, 230, 230) 0 0.104vw 0.052vw * $coefficient 0,
+      rgb(252, 252, 252) 0 0.052vw * $coefficient 0.156vw * $coefficient 0;
   }
 
   .categories-container {
@@ -13591,7 +13591,7 @@ svg {
   .mattress-parameters-column {
     padding-right: 1.042vw * $coefficient;
     padding-bottom: 0.781vw * $coefficient;
-  ;
+    ;
   }
 
   .mattress-parameters-title {
@@ -13910,9 +13910,9 @@ svg {
 
   #product-detail__tab li {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0.260vw * $coefficient 0.781vw * $coefficient 0px,
-    rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw * $coefficient,
-    rgba(0, 0, 0, 0.05) 0px 0.052vw * $coefficient 0px 0px,
-    rgba(0, 0, 0, 0.01) 0px 0.052vw * $coefficient 0.156vw * $coefficient 0px;
+      rgba(0, 0, 0, 0.03) 0px 0px 0px 0.052vw * $coefficient,
+      rgba(0, 0, 0, 0.05) 0px 0.052vw * $coefficient 0px 0px,
+      rgba(0, 0, 0, 0.01) 0px 0.052vw * $coefficient 0.156vw * $coefficient 0px;
     border-radius: 0.208vw * $coefficient;
   }
 
@@ -14286,9 +14286,9 @@ svg {
 
   .reviews-items:hover .slick-arrow {
     box-shadow: rgb(242, 242, 242) 0 0.260vw * $coefficient 0.781vw * $coefficient 0,
-    rgb(247, 247, 247) 0 0 0 0.052vw * $coefficient,
-    rgb(242, 242, 242) 0 0.052vw * $coefficient 0 0,
-    rgb(252, 252, 252) 0 0.052vw * $coefficient 0.156vw * $coefficient 0;
+      rgb(247, 247, 247) 0 0 0 0.052vw * $coefficient,
+      rgb(242, 242, 242) 0 0.052vw * $coefficient 0 0,
+      rgb(252, 252, 252) 0 0.052vw * $coefficient 0.156vw * $coefficient 0;
   }
 
 
@@ -14906,8 +14906,8 @@ svg {
     width: 25vw * $coefficient;
     font-size: 1.667vw * $coefficient;
     box-shadow: rgb(242, 242, 242) 0px 0.052vw * $coefficient 0px,
-    rgb(230, 230, 230) 0px 0.052vw * $coefficient 0.104vw * $coefficient,
-    rgb(242, 242, 242) 0px 0.260vw * $coefficient 0.781vw * $coefficient;
+      rgb(230, 230, 230) 0px 0.052vw * $coefficient 0.104vw * $coefficient,
+      rgb(242, 242, 242) 0px 0.260vw * $coefficient 0.781vw * $coefficient;
   }
 
 
@@ -14918,8 +14918,8 @@ svg {
   .btn.btn-primary:hover,
   .btn.btn-primary:focus {
     box-shadow: rgb(242, 242, 242) 0px 0.260vw * $coefficient 0.781vw * $coefficient,
-    rgb(230, 230, 230) 0px 0.260vw * $coefficient 0.260vw * $coefficient,
-    rgb(242, 242, 242) 0px 0.104vw * $coefficient 0.260vw * $coefficient;
+      rgb(230, 230, 230) 0px 0.260vw * $coefficient 0.260vw * $coefficient,
+      rgb(242, 242, 242) 0px 0.104vw * $coefficient 0.260vw * $coefficient;
   }
 
   .submitWrapper {
@@ -16075,6 +16075,3 @@ svg {
   }
 
 }
-
-
-

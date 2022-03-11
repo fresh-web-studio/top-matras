@@ -34,24 +34,26 @@
                 <nav id="menu">
                     <ul>
                         <li><span>Матрасы</span>
-                            <ul>
-                                <li><a href="/about/history">Беспружинные матрасы <div class="discount-menu"><span>15%
-                                                OFF</span></div></a></li>
-                                <li><a href="/about/history">Зависимые матрасы <div class="discount-menu"><span>15%
-                                                OFF</span></div></a></li>
-                                <li><a href="/about/history">Пружинные матрасы <div class="discount-menu"><span>15%
-                                                OFF</span></div></a></li>
-                                <a href="#" class="menu-link-button">Посмотреть все матрасы</a>
-                                <div class="menu-image-title">Оригинальный матрас</div>
-                                <a class="menu-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/000.jpg" alt=""></a>
-                            </ul>
+                            <div>
+                                <ul>
+                                    <li><a href="catalog.html">Беспружинные матрасы <div class="discount-menu"><span>15%
+                                                    OFF</span></div></a></li>
+                                    <li><a href="catalog.html">Пружинные матрасы <div class="discount-menu"><span>15%
+                                                    OFF</span></div></a></li>
+                                    <li><a href="catalog.html">Топперы<div class="discount-menu"><span>15%
+                                                    OFF</span></div></a></li>
+                                </ul>
+                                <a href="categories-page.html" class="menu-link-button">Посмотреть все матрасы</a>
+                            </div>
                         </li>
-                        <li><span>Топперы</span></li>
-                        <li><span>Боксы кровати</span></li>
-                        <li><span>Ортопедические основания</span></li>
+                        <li><a href="catalog.html">Наматрасники</a></li>
+                        <li><a href="catalog.html">Боксы кровати</a></li>
+                        <li><a href="catalog.html">Ортопедические основания</a></li>
+                        <li><a href="catalog.html">Постельное бельё</a></li>
                         <li><a href="#">О компании</a></li>
                         <li><a href="#">Доставка и оплата</a></li>
                         <li><a href="#">Контакты</a></li>
+                        <li><a href="authorization.html">Личный кабинет</a></li>
                     </ul>
                 </nav>
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo">
@@ -82,7 +84,7 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/map.svg" alt="">
                     <div class="map-name">Москва</div>
                 </a>
-                <a class="shopping-cart" href="http://localhost:8888/top-matras.shop/cart/">
+                <a class="shopping-cart" href="/cart/">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Vector.svg" alt="">
                 </a>
             </div>

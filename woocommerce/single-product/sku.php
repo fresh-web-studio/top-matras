@@ -1,8 +1,8 @@
 <?php
 /**
- * Loop Price
+ * Single Product Meta
  *
- * This template can be overridden by copying it to yourtheme/woocommerce/loop/price.php.
+ * This template can be overridden by copying it to yourtheme/woocommerce/single-product/meta.php.
  *
  * HOWEVER, on occasion WooCommerce will need to update template files and you
  * (the theme developer) will need to copy the new files to your theme to
@@ -12,16 +12,24 @@
  *
  * @see         https://docs.woocommerce.com/document/template-structure/
  * @package     WooCommerce\Templates
- * @version     1.6.4
+ * @version     3.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+	exit;
 }
 
 global $product;
 ?>
 
-<?php if ( $price_html = $product->get_price_html() ) : ?>
-    <div class="product-price-container"><span class="price-text">Цена: </span><span class="price"><?php echo $price_html; ?></span></div>
-<?php endif; ?>
+    <?php do_action( 'woocommerce_product_meta_start' ); ?>
+
+    <?php if ( wc_product_sku_enabled() && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) : ?>
+
+        (<?php echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ); ?>)
+
+    <?php endif; ?>
+
+    <?php do_action( 'woocommerce_product_meta_end' ); ?>
+
+</h1>

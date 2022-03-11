@@ -1074,7 +1074,6 @@ textarea {
     -webkit-box-shadow: 0 0.364vw 1.8228vw rgba(0, 0, 0, 0.15);
     box-shadow: 0 0.364vw 1.8228vw rgba(0, 0, 0, 0.15); }
     .header .header-wrapper {
-      width: 100vw;
       height: 2.917vw; }
       .header .header-wrapper .header-logo_burger {
         margin-top: 0.511vw; }
@@ -1094,8 +1093,6 @@ textarea {
           margin-top: 5.6882vw;
           padding: 0.7294vw;
           line-height: 2.4794vw; }
-        .header .header-wrapper .header-logo_burger a img {
-          width: 13.438vw; }
       .header .header-wrapper .nav-menu {
         font-size: 0.938vw;
         line-height: 1.146vw; }

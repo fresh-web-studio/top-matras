@@ -9,8 +9,7 @@ document.addEventListener(
             "navbars": [{
                     "position": "top",
                     "content": [
-                        "close",
-                        "<a href=''><img src='wp-content/themes/top-matras-shop/assets/images/Vector.svg'></a>"
+                        "close"
                     ]
                 },
                 {
@@ -29,8 +28,8 @@ document.addEventListener(
 
 );
 
-$(document).on('ready', function () {
-    $(".main-slider").slick({
+jQuery.noConflict()(document).on('ready', function () {
+    jQuery.noConflict()(".main-slider").slick({
         dots: true,
         infinite: true,
         slidesToShow: 1,
@@ -40,14 +39,14 @@ $(document).on('ready', function () {
         nextArrow: '<i class="fa fa-angle-right">',
         prevArrow: '<i class="fa fa-angle-left">'
     })
-    $(".lazy").slick({
+    jQuery.noConflict()(".lazy").slick({
         lazyLoad: 'ondemand', // ondemand progressive anticipated
         infinite: true
     });
 });
 
-$(document).on('ready', function () {
-    $(".first-regular").slick({
+jQuery.noConflict()(document).on('ready', function () {
+    jQuery.noConflict()(".first-regular").slick({
         dots: true,
         lazyLoad: 'ondemand', // ondemand progressive anticipated
         infinite: true,
@@ -59,7 +58,7 @@ $(document).on('ready', function () {
 
     });
 
-    $(".second-regular").slick({
+    jQuery.noConflict()(".second-regular").slick({
         dots: false,
         infinite: true,
         slidesToShow: 1,
@@ -72,35 +71,14 @@ $(document).on('ready', function () {
         asNavFor: '.first-regular'
     });
 
-    $(".lazy").slick({
+    jQuery.noConflict()(".lazy").slick({
         lazyLoad: 'ondemand', // ondemand progressive anticipated
         infinite: true
     });
 });
 
-$(document).on('ready', function () {
-    $(".slider-сarousel").slick({
-        dots: false,
-        infinite: false,
-        slidesToShow: 1.5,
-        slidesToScroll: 1,
-        swipeToSlide: true,
-        autoplay: false,
-        variableWidth: true,
-        mobileFirst:true,
-        autoplay: false,
-        autoplaySpeed: 5000,
-        nextArrow: '<i class="fa fa-angle-right">',
-        prevArrow: '<i class="fa fa-angle-left">',
-    })
-    $(".lazy").slick({
-        lazyLoad: 'ondemand', // ondemand progressive anticipated
-        infinite: true
-    });
-});
-
-$(document).on('ready', function () {
-    $(".product-first-slick").slick({
+jQuery.noConflict()(document).on('ready', function () {
+    jQuery.noConflict()(".product-first-slick").slick({
         dots: true,
         infinite: true,
         slidesToShow: 1,
@@ -109,13 +87,13 @@ $(document).on('ready', function () {
         swipe: false,
         arrows: false
     });
-    $('.product-first-slick').on('click', function () {
+    jQuery.noConflict()('.product-first-slick').on('click', function () {
         $(this).slick('slickNext');
     });
 });
 
-$(document).on('ready', function () {
-    $(".reviews-items").slick({
+jQuery.noConflict()(document).on('ready', function () {
+    jQuery.noConflict()(".reviews-items").slick({
         dots: true,
         infinite: true,
         centerMode: true,
@@ -137,29 +115,29 @@ $(document).on('ready', function () {
     });
 });
 
-$(function () {
-    $('.button-one').click(function () {
-        $('.button-one').addClass('button-active');
-        $('.button-two').removeClass('button-active');
-        $('.button-three').removeClass('button-active');
-        $('.button-four').removeClass('button-active');
+jQuery.noConflict()(function () {
+    jQuery.noConflict()('.button-one').click(function () {
+        jQuery.noConflict()('.button-one').addClass('button-active');
+        jQuery.noConflict()('.button-two').removeClass('button-active');
+        jQuery.noConflict()('.button-three').removeClass('button-active');
+        jQuery.noConflict()('.button-four').removeClass('button-active');
     });
-    $('.button-two').click(function () {
-        $('.button-two').addClass('button-active');
-        $('.button-one').removeClass('button-active');
-        $('.button-three').removeClass('button-active');
-        $('.button-four').removeClass('button-active');
+    jQuery.noConflict()('.button-two').click(function () {
+        jQuery.noConflict()('.button-two').addClass('button-active');
+        jQuery.noConflict()('.button-one').removeClass('button-active');
+        jQuery.noConflict()('.button-three').removeClass('button-active');
+        jQuery.noConflict()('.button-four').removeClass('button-active');
     });
-    $('.button-three').click(function () {
-        $('.button-three').addClass('button-active');
-        $('.button-one').removeClass('button-active');
-        $('.button-two').removeClass('button-active');
-        $('.button-four').removeClass('button-active');
+    jQuery.noConflict()('.button-three').click(function () {
+        jQuery.noConflict()('.button-three').addClass('button-active');
+        jQuery.noConflict()('.button-one').removeClass('button-active');
+        jQuery.noConflict()('.button-two').removeClass('button-active');
+        jQuery.noConflict()('.button-four').removeClass('button-active');
     });
-    $('.button-four').click(function () {
-        $('.button-four').addClass('button-active');
-        $('.button-one').removeClass('button-active');
-        $('.button-two').removeClass('button-active');
-        $('.button-three').removeClass('button-active');
+    jQuery.noConflict()('.button-four').click(function () {
+        jQuery.noConflict()('.button-four').addClass('button-active');
+        jQuery.noConflict()('.button-one').removeClass('button-active');
+        jQuery.noConflict()('.button-two').removeClass('button-active');
+        jQuery.noConflict()('.button-three').removeClass('button-active');
     });
 });

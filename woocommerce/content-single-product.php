@@ -60,7 +60,7 @@ if ( post_password_required() ) {
 		do_action( 'woocommerce_single_product_summary' );
 		?>
 	</div>
-
+    </form>
 	<?php
 	/**
 	 * Hook: woocommerce_after_single_product_summary.
@@ -74,3 +74,29 @@ if ( post_password_required() ) {
 </div>
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>
+<div class="advantages-container">
+    <div class="advantages-items">
+        <div class="advantages-item">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/advantages1.svg" alt="Преимущества">
+            <div class="advantages-title">Поболтай с нами</div>
+            <div class="advantages-description">Пиши! Наша служба поддержки всегда на связи в чате и готова
+                помочь.
+                Спрашивай!</div>
+        </div>
+        <div class="advantages-item">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/advantages2.svg" alt="Преимущества">
+            <div class="advantages-title">Гарантия качества</div>
+            <div class="advantages-description">Оцени качество наших матрасов. У нас самая требовательная оценка
+                качества. </div>
+        </div>
+        <div class="advantages-item">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/advantages3.svg" alt="Преимущества">
+            <div class="advantages-title">Позвони нам</div>
+            <div class="advantages-description">Наши специалисты по сну готовы подобрать вам матрас Вашей мечты.
+                Уточняй у нас все вопросы</div>
+        </div>
+    </div>
+</div>
+
+    <?php echo do_shortcode('[woo_product_slider id="170"]'); ?>
+
