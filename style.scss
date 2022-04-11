@@ -88,9 +88,8 @@ body {
  */
 main {
 	display: block;
-	padding-top: 3vw;
+	padding-top: 5vw;
 }
-
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
@@ -495,8 +494,8 @@ ol {
 	list-style: decimal;
 }
 
-li > ul,
-li > ol {
+li>ul,
+li>ol {
 	margin-bottom: 0;
 	margin-left: 1.5em;
 }
@@ -669,8 +668,8 @@ textarea {
 	top: 0;
 }
 
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
+.main-navigation ul ul li:hover>ul,
+.main-navigation ul ul li.focus>ul {
 	display: block;
 	left: auto;
 }
@@ -679,8 +678,8 @@ textarea {
 	width: 200px;
 }
 
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
+.main-navigation ul li:hover>ul,
+.main-navigation ul li.focus>ul {
 	left: auto;
 }
 
@@ -711,10 +710,8 @@ textarea {
 }
 
 .site-main .comment-navigation,
-.site-main
-.posts-navigation,
-.site-main
-.post-navigation {
+.site-main .posts-navigation,
+.site-main .post-navigation {
 	margin: 0 0 1.5em;
 }
 
@@ -885,9 +882,16 @@ textarea {
 
 /* fix Фиксированного меню */
 
-#wpadminbar + #page > .header {
-top: 1.67vw;
+#wpadminbar+#page>.header {
+	top: 1.67vw;
 }
+
+/* Фиксация корзины */
+
+#wpadminbar+#page+.vi-wcaio-sidebar-cart-icon-wrap {
+	top: 2.21vw;
+}
+
 
 /* /fix Фиксированного меню */
 
@@ -916,17 +920,18 @@ top: 1.67vw;
 	top: 0;
 	position: fixed;
 
-		.header-wrapper {
+	.header-wrapper {
 		/* width: 97.813vw; */
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		height: 2.917vw;
-			.product-preview .woocommerce ul.product_list_widget li img {
-				width: 20vw;
-				background-color: #C4C4C4;
-			}
+
+		.product-preview .woocommerce ul.product_list_widget li img {
+			width: 20vw;
+			background-color: #C4C4C4;
+		}
 
 		.hamburger-box {
 			width: 1.146vw !important;
@@ -938,6 +943,7 @@ top: 1.67vw;
 			height: 0.104vw;
 
 		}
+
 		.hamburger-inner::after {
 			width: 1.146vw !important;
 			height: 0.104vw;
@@ -1010,7 +1016,7 @@ top: 1.67vw;
 
 				display: flex;
 				text-decoration: none;
-				margin-right: 0.573vw;
+				margin-right: 1.573vw;
 
 				.map-name {
 					font-style: normal;
@@ -1220,14 +1226,14 @@ top: 1.67vw;
 	padding: 0.156vw 0.417vw;
 	margin-left: 0.417vw;
 	background-color: rgb(0, 112, 110);
-	border-radius: 0.521vw;
+	border-radius: 1.021vw;
 	color: rgb(255, 255, 255);
 }
 
 .discount-menu span {
 	font-weight: 500;
 	font-style: normal;
-	font-size: 0.521vw;
+	font-size: 0.721vw;
 	line-height: 1;
 	letter-spacing: 0.052vw;
 }
@@ -1287,8 +1293,12 @@ top: 1.67vw;
 
 	/* fix Фиксированного меню */
 
-	#wpadminbar + #page > .header {
+	#wpadminbar+#page>.header {
 		top: 1.67vw * $coefficient;
+	}
+
+	#wpadminbar+#page+.vi-wcaio-sidebar-cart-icon-wrap {
+		top: 2.15vw * $coefficient;
 	}
 
 	/* /fix Фиксированного меню */
@@ -1334,8 +1344,8 @@ top: 1.67vw;
 				}
 
 				a {
-					img {
-					}
+					img {}
+
 				}
 			}
 
@@ -1354,16 +1364,13 @@ top: 1.67vw;
 					padding: 0.729vw * $coefficient 0.729vw * $coefficient;
 				}
 
-				.nav:hover .sub-menu {
-
-				}
+				.nav:hover .sub-menu {}
 
 				a:hover {
 					border-bottom: 0.150vw * $coefficient solid #1F316A;
 				}
 
-				.nav {
-				}
+				.nav {}
 
 				.deactive {
 					padding: 0.729vw * $coefficient 0.729vw * $coefficient;
@@ -1558,19 +1565,23 @@ top: 1.67vw;
 		.footer__row {
 			padding: 2.760vw * $coefficient 0 5vw * $coefficient;
 		}
+
 		.footer__column-header {
 			font-size: 1.198vw * $coefficient;
 			padding-bottom: 1.354vw * $coefficient;
 		}
+
 		.footer__menu-link {
 			font-size: 0.938vw * $coefficient;
 			line-height: 2vw * $coefficient;
 		}
+
 		.footer__social {
 			margin-bottom: 0.521vw * $coefficient;
 		}
 
-		.first, .second {
+		.first,
+		.second {
 			border: 0.16vw * $coefficient solid transparent;
 			width: 2.135vw * $coefficient;
 			height: 2.135vw * $coefficient;
@@ -1579,9 +1590,11 @@ top: 1.67vw;
 		.footer__copyright {
 			font-size: 0.833vw * $coefficient;
 		}
+
 		.footer__row-copyright {
 			height: 2.813vw * $coefficient;
 		}
+
 		.year {
 			margin: 0 0.625vw * $coefficient;
 		}
@@ -1590,6 +1603,24 @@ top: 1.67vw;
 
 @media all and (max-width: 415px) {
 	$coefficient: 4;
+	main {
+		padding-top: 20vw;
+	}
+	#wpadminbar {
+		position: fixed;
+	}
+
+	#wpadminbar+#page>.header {
+		top: 11.084vw !important;
+	}
+
+	#wpadminbar+#page>.main {
+		margin-top: 35.904vw;
+	}
+
+	#wpadminbar+#page+.vi-wcaio-sidebar-cart-icon-wrap {
+		top: 27.7vw ;
+	}
 
 	/** mmenu **/
 
@@ -1758,9 +1789,10 @@ top: 1.67vw;
 	.container {
 		padding: 0 3.614vw;
 	}
+
 	/* fix Фиксированного меню */
 
-	#wpadminbar + #page > .header {
+	#wpadminbar+#page>.header {
 		top: 0;
 	}
 
@@ -1889,31 +1921,39 @@ top: 1.67vw;
 	}
 
 
-
-
+	
 	footer {
+		.footer__main .container{
+			width: 91vw !important;
+		}
 		.footer__row {
 			padding: 2.760vw * $coefficient 0 5vw * $coefficient;
 		}
+
 		.footer__column-header {
 			font-size: 1.198vw * $coefficient;
 			padding-bottom: 1.354vw * $coefficient;
 		}
+
 		.footer__column {
 			width: 100vw;
 		}
+
 		.footer__column:first-child {
 			padding-bottom: 1.354vw * $coefficient;
 		}
+
 		.footer__menu-link {
 			font-size: 0.938vw * $coefficient;
 			line-height: 2vw * $coefficient;
 		}
+
 		.footer__social {
 			margin-bottom: 0.521vw * $coefficient;
 		}
 
-		.first, .second {
+		.first,
+		.second {
 			border: 0.16vw * $coefficient solid transparent;
 			width: 2.135vw * $coefficient;
 			height: 2.135vw * $coefficient;
@@ -1922,9 +1962,11 @@ top: 1.67vw;
 		.footer__copyright {
 			font-size: 0.833vw * $coefficient;
 		}
+
 		.footer__row-copyright {
 			height: 2.813vw * $coefficient;
 		}
+
 		.year {
 			margin: 0 0.625vw * $coefficient;
 		}

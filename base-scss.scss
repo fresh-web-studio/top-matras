@@ -2,12 +2,11 @@
   font-family: 'Calibri Regular';
   src: url('assets/fonts/Calibri.eot');
   src: url('assets/fonts/Calibri.eot?#iefix') format('embedded-opentype'),
-  url('assets/fonts/Calibri.woff') format('woff'),
-  url('assets/fonts/Calibri.ttf') format('truetype');
+    url('assets/fonts/Calibri.woff') format('woff'),
+    url('assets/fonts/Calibri.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-
 
 $font: 'Calibri Regular';
 $images: url(assets/images);
@@ -20,6 +19,10 @@ $yellow: #EFCA58;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Calibri Regular';
+}
+
+html {
+  margin-top: 0 !important;
 }
 
 a {
@@ -35,7 +38,38 @@ body {
 }
 
 .container {
-  width: 71.146vw;
+  width: 77.708vw !important;
   margin: 0 auto;
-  padding: 0 1.042vw;
+  padding: 0 !important;
+}
+
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm,
+.container {
+  max-width: 100vw;
+}
+
+@media all and (max-width: 1366px) {
+  $coefficient: 1.4;
+
+  //Правки контейнера
+
+  .container {
+    width: 97.5vw !important;
+    margin: 0 auto;
+    padding: 0 !important;
+  }
+}
+
+@media all and (max-width: 415px) {
+  $coefficient: 4;
+
+  .site-main .container, .container {
+    width: 91vw !important;
+    margin: 0 auto;
+  }
+
 }

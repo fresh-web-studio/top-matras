@@ -7,6 +7,7 @@
 
 html {
   overflow-y: scroll;
+
 }
 
 img,
@@ -920,6 +921,9 @@ svg {
     }
   }
 
+  .mm-navbars_bottom {
+    display: none;
+  }
 
   #cartMenuProduct .mm-navbars_bottom .mm-navbar:first-child {
     border-top: none;
@@ -1264,7 +1268,6 @@ svg {
 
     .product-discount_price {
       font-size: 1.188vw;
-      line-height: 1.526vw;
       font-weight: 700;
       color: #0C5E5B !important;
     }
@@ -1316,6 +1319,176 @@ svg {
 
   .border-divider {
     display: none;
+  }
+
+  //Стили модального окна
+
+  .modal-city {
+    /* Слой перекрытия */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    /* Трансформации прозрачности при открытии  */
+    -webkit-transition: opacity 500ms ease-in;
+    -moz-transition: opacity 500ms ease-in;
+    transition: opacity 500ms ease-in;
+    /* Скрываем изначально */
+    opacity: 0;
+    pointer-events: none;
+  }
+
+
+  /* Показываем модальное окно */
+  .modal-city:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* Содержание */
+  .modal-city>div {
+    width: 31.342vw;
+    background: #ffffff;
+    position: relative;
+    margin: 13% auto;
+    /* По умолчанию минимизируем анимацию */
+    -webkit-animation: minimise 500ms linear;
+    /* Придаем хороший вид */
+    padding: 1.563vw 2.083vw;
+    -moz-border-radius: 0.156vw;
+    border-radius: 0.156vw;
+  }
+
+  /* Изменяем анимацию при открытии модального окна*/
+  .modal-city:target>div {
+    -webkit-animation-name: bounce;
+  }
+
+  @-webkit-keyframes bounce {
+    0% {
+      -webkit-transform: scale3d(0.1, 0.1, 1);
+    }
+
+    55% {
+      -webkit-transform: scale3d(1.08, 1.08, 1);
+    }
+
+    75% {
+      -webkit-transform: scale3d(0.95, 0.95, 1);
+    }
+
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+    }
+  }
+
+  @-webkit-keyframes minimise {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+    }
+
+    100% {
+      -webkit-transform: scale3d(0.1, 0.1, 1);
+    }
+  }
+
+  /* Ссылка на кнопку Закрыть */
+  .modal-city a[href="#close"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: transparent;
+  }
+
+  /* Сбрасываем изменения */
+  .modal-city a[href="#close"]:focus {
+    outline: none;
+  }
+
+  /* Создаем кнопку Закрыть */
+  .modal-city a[href="#close"]:after {
+    content: '\00D7';
+    font-size: 50px;
+    font-weight: 100;
+    /* Позиционируем */
+    position: absolute;
+    right: -30px;
+    top: -22px;
+    /* Стили */
+    text-decoration: none;
+    color: #a7a7a7;
+  }
+
+  .modal-city a[href="#close"]:focus:after,
+  .modal-city a[href="#close"]:hover:after {
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+  }
+
+  .modal-city a[href="#close"]:focus:after {
+    outline: 0px solid #000;
+  }
+
+  .modal-city .city {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .city-title {
+      text-align: center;
+      font-size: 1.875vw;
+      color: #1F316A;
+    }
+
+    .city-list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 2vw 0;
+      height: 10vw;
+      width: 27.875vw;
+
+      a {
+        margin: 0vw 1vw 1vw 0;
+        font-size: 1.1vw;
+      }
+
+      a:hover {
+        color: #526699;
+      }
+    }
+
+    .geo-clean {
+      text-align: center;
+      display: inline-block;
+      font-size: 0.938vw;
+      line-height: 1.3;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: 0.208vw;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-transition: background-color 0.15s ease-out 0s, color 0.15s ease-out 0s;
+      transition: background-color 0.15s ease-out 0s, color 0.15s ease-out 0s;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      padding: 0.625vw 1.25vw 0.677vw;
+      font-style: normal;
+      font-weight: 500;
+      color: white !important;
+      background: #1e306e;
+    }
+
+    .geo-clean:hover {
+      background: #526699;
+    }
   }
 
   //Хлебные крошки
@@ -1636,18 +1809,7 @@ svg {
 
   .slick-list {
     .slick-loading & {
-      background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
-    }
-  }
-
-  /* Icons */
-  @if $slick-font-family=="slick" {
-    @font-face {
-      font-family: "slick";
-      src: slick-font-url("slick.eot");
-      src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"), slick-font-url("slick.svg#slick") format("svg");
-      font-weight: normal;
-      font-style: normal;
+      background: #fff slick-image-url("assets/images/ajax-loader.gif") center center no-repeat;
     }
   }
 
@@ -1961,6 +2123,10 @@ svg {
     /*margin: 5.208vw 1.198vw;*/
   }
 
+  .product_title.entry-title {
+    text-align: left;
+  }
+
   .reviews-items.slider {
     margin: 2vw 1.198vw;
   }
@@ -2189,6 +2355,11 @@ svg {
       font-size: 1.719vw;
       color: #1F316A;
       width: 38.333vw;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 4;
     }
 
     .reviews-tag {
@@ -2479,17 +2650,6 @@ svg {
   .slick-list {
     .slick-loading & {
       background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
-    }
-  }
-
-  /* Icons */
-  @if $slick-font-family=="slick" {
-    @font-face {
-      font-family: "slick";
-      src: slick-font-url("slick.eot");
-      src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"), slick-font-url("slick.svg#slick") format("svg");
-      font-weight: normal;
-      font-style: normal;
     }
   }
 
@@ -3764,7 +3924,7 @@ svg {
 
   .product-discount_price {
     font-size: 1.250vw;
-    line-height: 1.526vw;
+    line-height: 0 !important;
     font-weight: 700;
     color: #0C5E5B;
   }
@@ -3781,13 +3941,13 @@ svg {
 
   .product-discount-percent {
     font-size: 0.729vw;
-    line-height: 0.890vw;
     font-weight: 700;
     text-align: center;
     padding: 0.313vw 0.781vw;
     color: #FFFFFF;
     background-color: #0C5E5B;
     border-radius: 0.781vw;
+    order: 1;
   }
 
   .mattress-parameters {
@@ -4809,6 +4969,7 @@ svg {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 8.854vw;
   }
 
   .name {
@@ -4851,6 +5012,11 @@ svg {
     width: 21.243vw;
     color: #504C4C;
     margin-bottom: 1vw;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
   }
 
   .read-more {
@@ -5049,17 +5215,6 @@ svg {
   .slick-list {
     .slick-loading & {
       background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
-    }
-  }
-
-  /* Icons */
-  @if $slick-font-family=="slick" {
-    @font-face {
-      font-family: "slick";
-      src: slick-font-url("slick.eot");
-      src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"), slick-font-url("slick.svg#slick") format("svg");
-      font-weight: normal;
-      font-style: normal;
     }
   }
 
@@ -5404,7 +5559,7 @@ svg {
     font-weight: 400;
     letter-spacing: 0.031vw;
     color: rgb(21, 21, 21);
-    padding: 0.833vw 1.042vw;
+    padding: 0.833vw 1.042vw !important;
     font-size: 0.938vw;
     display: block;
     width: 45.313vw;
@@ -5643,6 +5798,9 @@ svg {
 
   .border-image {
     width: 39.531vw;
+    background-image: url("../images/component2.png");
+    background-size: 100%;
+    height: 7.760vw;
   }
 
   #border-image-PC {
@@ -6814,6 +6972,7 @@ svg {
   }
 
   .reviews-title {
+    margin-top: 6vw;
     font-size: 1.875vw;
     font-weight: 700;
     line-height: 2.292vw;
@@ -7568,6 +7727,146 @@ svg {
     width: 1.146vw * $coefficient;
     height: 0.104vw * $coefficient;
     top: 0.3vw * $coefficient;
+  }
+
+  //Стили модального окна
+
+  .modal-city {
+    /* Слой перекрытия */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    /* Трансформации прозрачности при открытии  */
+    -webkit-transition: opacity 500ms ease-in;
+    -moz-transition: opacity 500ms ease-in;
+    transition: opacity 500ms ease-in;
+    /* Скрываем изначально */
+    opacity: 0;
+    pointer-events: none;
+  }
+
+
+  /* Показываем модальное окно */
+  .modal-city:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* Содержание */
+  .modal-city>div {
+    width: 31.342vw * $coefficient;
+    background: #ffffff;
+    position: relative;
+    margin: 13% auto;
+    /* По умолчанию минимизируем анимацию */
+    -webkit-animation: minimise 500ms linear;
+    /* Придаем хороший вид */
+    padding: 1.563vw * $coefficient 2.083vw * $coefficient;
+    -moz-border-radius: 0.156vw * $coefficient;
+    border-radius: 0.156vw * $coefficient;
+  }
+
+  /* Изменяем анимацию при открытии модального окна*/
+  .modal-city:target>div {
+    -webkit-animation-name: bounce;
+  }
+
+  @-webkit-keyframes bounce {
+    0% {
+      -webkit-transform: scale3d(0.1, 0.1, 1);
+    }
+
+    55% {
+      -webkit-transform: scale3d(1.08, 1.08, 1);
+    }
+
+    75% {
+      -webkit-transform: scale3d(0.95, 0.95, 1);
+    }
+
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+    }
+  }
+
+  @-webkit-keyframes minimise {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+    }
+
+    100% {
+      -webkit-transform: scale3d(0.1, 0.1, 1);
+    }
+  }
+
+  /* Ссылка на кнопку Закрыть */
+  .modal-city a[href="#close"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: transparent;
+  }
+
+  /* Сбрасываем изменения */
+  .modal-city a[href="#close"]:focus {
+    outline: none;
+  }
+
+  /* Создаем кнопку Закрыть */
+  .modal-city a[href="#close"]:after {
+    content: '\00D7';
+    font-size: 50px;
+    font-weight: 100;
+    /* Позиционируем */
+    position: absolute;
+    right: -30px;
+    top: -22px;
+    /* Стили */
+    text-decoration: none;
+    color: #a7a7a7;
+  }
+
+  .modal-city a[href="#close"]:focus:after,
+  .modal-city a[href="#close"]:hover:after {
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+  }
+
+  .modal-city a[href="#close"]:focus:after {
+    outline: 0px solid #000;
+  }
+
+  .modal-city .city {
+
+    .city-title {
+      font-size: 1.875vw * $coefficient;
+    }
+
+    .city-list {
+      margin: 2vw * $coefficient 0;
+      height: 10vw * $coefficient;
+      width: 27.875vw * $coefficient;
+
+      a {
+        margin: 0vw 1vw * $coefficient 1vw * $coefficient 0;
+        font-size: 1.1vw * $coefficient;
+      }
+
+      a:hover {}
+    }
+
+    .geo-clean {
+      font-size: 0.938vw * $coefficient;
+      line-height: 1.3;
+      border-radius: 0.208vw * $coefficient;
+      padding: 0.625vw * $coefficient 1.25vw * $coefficient 0.677vw * $coefficient;
+    }
+
+    .geo-clean:hover {}
   }
 
   .breadcrumb {
@@ -9023,7 +9322,6 @@ svg {
 
   .product-discount-percent {
     font-size: 0.729vw * $coefficient;
-    line-height: 0.890vw * $coefficient;
     padding: 0.313vw * $coefficient 0.781vw * $coefficient;
     border-radius: 0.781vw * $coefficient;
     margin-top: 0.7vw * $coefficient;
@@ -9587,7 +9885,9 @@ svg {
     }
   }
 
-  .tag-name-city {}
+  .tag-name-city {
+    width: 11.201vw;
+  }
 
   .name {
     font-size: 0.885vw * $coefficient;
@@ -11272,6 +11572,7 @@ svg {
   }
 
   .reviews-title {
+    margin-top: 6vw * $coefficient;
     font-size: 1.875vw * $coefficient;
     font-weight: 700;
     line-height: 2.292vw * $coefficient;
@@ -11478,7 +11779,8 @@ svg {
       .header-right {
         margin-top: 1.928vw;
         margin-bottom: 2.410vw;
-        margin-right: 0;
+        margin-right: 57vw;
+        width: auto !important;
         justify-content: center;
 
         .account {
@@ -12025,6 +12327,147 @@ svg {
   }
 
   .burger-menu {}
+
+  //Стили модального окна
+
+  .modal-city {
+    /* Слой перекрытия */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    /* Трансформации прозрачности при открытии  */
+    -webkit-transition: opacity 500ms ease-in;
+    -moz-transition: opacity 500ms ease-in;
+    transition: opacity 500ms ease-in;
+    /* Скрываем изначально */
+    opacity: 0;
+    pointer-events: none;
+  }
+
+
+  /* Показываем модальное окно */
+  .modal-city:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* Содержание */
+  .modal-city>div {
+    width: 85.368vw;
+    background: #ffffff;
+    position: relative;
+    margin: 13% auto;
+    /* По умолчанию минимизируем анимацию */
+    -webkit-animation: minimise 500ms linear;
+    /* Придаем хороший вид */
+    padding: 1.563vw * $coefficient 2.083vw * $coefficient;
+    -moz-border-radius: 0.156vw * $coefficient;
+    border-radius: 0.156vw * $coefficient;
+  }
+
+  /* Изменяем анимацию при открытии модального окна*/
+  .modal-city:target>div {
+    -webkit-animation-name: bounce;
+  }
+
+  @-webkit-keyframes bounce {
+    0% {
+      -webkit-transform: scale3d(0.1, 0.1, 1);
+    }
+
+    55% {
+      -webkit-transform: scale3d(1.08, 1.08, 1);
+    }
+
+    75% {
+      -webkit-transform: scale3d(0.95, 0.95, 1);
+    }
+
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+    }
+  }
+
+  @-webkit-keyframes minimise {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+    }
+
+    100% {
+      -webkit-transform: scale3d(0.1, 0.1, 1);
+    }
+  }
+
+  /* Ссылка на кнопку Закрыть */
+  .modal-city a[href="#close"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: transparent;
+  }
+
+  /* Сбрасываем изменения */
+  .modal-city a[href="#close"]:focus {
+    outline: none;
+  }
+
+  /* Создаем кнопку Закрыть */
+  .modal-city a[href="#close"]:after {
+    content: '\00D7';
+    font-size: 50px;
+    font-weight: 100;
+    /* Позиционируем */
+    position: absolute;
+    right: -30px;
+    top: -22px;
+    /* Стили */
+    text-decoration: none;
+    color: #a7a7a7;
+  }
+
+  .modal-city a[href="#close"]:focus:after,
+  .modal-city a[href="#close"]:hover:after {
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+  }
+
+  .modal-city a[href="#close"]:focus:after {
+    outline: 0px solid #000;
+  }
+
+  .modal-city .city {
+
+    .city-title {
+      font-size: 1.875vw * $coefficient;
+    }
+
+    .city-list {
+      margin: 2vw * $coefficient 0;
+      height: 74vw;
+      width: 55.5vw;
+
+      a {
+        margin: 0vw 9vw 1vw * $coefficient 0;
+        font-size: 1.1vw * $coefficient;
+      }
+
+      a:hover {}
+    }
+
+    .geo-clean {
+      font-size: 0.938vw * $coefficient;
+      line-height: 1.3;
+      border-radius: 0.208vw * $coefficient;
+      padding: 0.625vw * $coefficient 1.25vw * $coefficient 0.677vw * $coefficient;
+      width: 100%;
+    }
+
+    .geo-clean:hover {}
+  }
 
   .breadcrumb {
     margin-top: 3.802vw * $coefficient;
@@ -13252,14 +13695,14 @@ svg {
   }
 
   .video-container {
-    width: 71.146vw * $coefficient;
+    width: 100vw;
     display: flex;
     justify-content: center;
     margin: 0 auto;
   }
 
   video {
-    height: 32.552vw * $coefficient;
+    height: 53.552vw;
   }
 
   .ready-container {
@@ -13529,7 +13972,6 @@ svg {
 
   .product-discount-percent {
     font-size: 0.729vw * $coefficient;
-    line-height: 0.890vw * $coefficient;
     padding: 0.313vw * $coefficient 0.781vw * $coefficient;
     border-radius: 0.781vw * $coefficient;
     margin-top: 0;
@@ -14230,7 +14672,9 @@ svg {
     }
   }
 
-  .tag-name-city {}
+  .tag-name-city {
+    width: 20.241vw;
+  }
 
   .name {
     font-size: 0.885vw * $coefficient;
@@ -14824,7 +15268,19 @@ svg {
 
   .advantages-ordering {
     background-color: #FAF6F4;
-    height: 10.4vw * $coefficient;
+    height: 12.4vw * $coefficient;
+
+    .advantages-items {
+      width: auto;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+    }
+
+    .advantages-item:last-child {
+      padding: 0;
+    }
   }
 
   #advantages-ordering-PC {
@@ -16012,6 +16468,7 @@ svg {
   }
 
   .reviews-title {
+    margin-top: 6vw * $coefficient;
     font-size: 1.875vw * $coefficient;
     font-weight: 700;
     line-height: 2.292vw * $coefficient;

@@ -41,12 +41,14 @@
   }
 
   .site-main-line {
-    width: 100vw;
+    width: 77.708vw;
+    margin: 0 auto !important;
+    padding: 1em 0 !important;
   }
 
   .woocommerce ul.products li.product .price {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     width: 9vw;
     justify-content: space-evenly;
     font-size: 0.885vw;
@@ -77,9 +79,10 @@
   .woocommerce .products ul,
   .woocommerce ul.products {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
+    width: 77.708vw;
+    margin: 0 auto !important;
+    padding: 1em 0 !important;
   }
 
   .hover-cart {
@@ -101,7 +104,7 @@
     padding: 0;
     position: relative;
     width: 18.589vw;
-    margin-left: 0;
+    margin: 0 0.4vw;
   }
 
   .products ul::after,
@@ -163,10 +166,35 @@
   .woocommerce div.product span.price {
     display: flex;
     flex-direction: row-reverse;
-    width: 13vw;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
     font-size: 1.250vw;
     line-height: 1.526vw;
+  }
+
+  .woocommerce div.product p.price del, .woocommerce div.product span.price del {
+    order: 2;
+  }
+
+  .woocommerce div.product p.price ins, .woocommerce div.product span.price ins {
+    order: 5;
+  }
+
+  ins .woocommerce-Price-amount.amount bdi {
+    font-size: 1.250vw;
+    line-height: 1.526vw;
+    font-weight: 700;
+    color: #0C5E5B;
+  }
+
+  del .woocommerce-Price-amount.amount bdi {
+    font-size: 1.250vw;
+    line-height: 1.526vw;
+    font-weight: 700;
+    color: #8C8B8B;
+    text-decoration: line-through;
+    margin-left: 0.521vw;
+    margin-right: 0.938vw;
   }
 
   .star-rating span {
@@ -414,6 +442,7 @@
 
   #wpgis-gallery .slick-slide img {
     border-radius: 0.208vw;
+    height: 2vw;
   }
 
   //Переопределение настроек слайдера товаров на главной странице
@@ -463,7 +492,7 @@
 
     .wpsf-product-price {
       display: flex;
-      flex-direction: row-reverse;
+      flex-direction: row;
       align-items: center;
     }
 
@@ -472,7 +501,7 @@
       font-size: 0.885vw;
     }
 
-    .wpsf-product-price::after {
+    .wpsf-product-price::before {
       content: 'Цена:';
       font-weight: 700;
       font-size: 0.885vw;
@@ -483,7 +512,7 @@
 
     .wpsf-cart-button {
       position: absolute;
-      bottom: 3.933vw;
+      top: 9.333vw;
       left: 1.833vw;
       transition: 500ms;
       opacity: 0;
@@ -494,6 +523,158 @@
       opacity: 1;
     }
 
+  }
+
+  //Правки корзины
+
+  #wpadminbar+#page>.vi-wcaio-sidebar-cart-icon-wrap {
+    top: 1.67vw;
+  }
+
+  .vi-wcaio-sidebar-cart-icon-wrap {
+    background: transparent;
+    position: fixed;
+    z-index: 999 !important;
+    top: 0.521vw;
+    right: 1.563vw;
+    width: 1.283vw;
+    height: 2.083vw;
+  }
+
+  //Правки страницы отзывов
+
+  .twb_wc_reviews>div {
+    display: grid;
+    grid-template-columns: 7vw 65vw;
+
+    .woocommerce.twb_wc_reviews_ratings_wrap {
+      grid-column-end: 3;
+      grid-row-end: 1;
+    }
+
+    a {
+      grid-column-end: 3;
+      grid-row-end: 2;
+    }
+
+    .twb_wcr_author {
+      grid-column-end: 2;
+      grid-row-end: 1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .twb_wcr_date {
+      grid-row-end: 2;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+
+  .twb_wc_reviews .twb_wc_reviews_ratings_wrap .star-rating {
+    margin: 0;
+  }
+
+  .twb_wc_reviews .twb_wc_reviews_ct {
+    width: auto;
+    margin: 0;
+    text-align: left;
+  }
+
+  //Правки mega-menu
+
+  #mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-megamenu>ul.mega-sub-menu {
+    left: -19.1vw;
+  }
+
+  #mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-megamenu>ul.mega-sub-menu {
+    width: 100vw;
+  }
+
+  #mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu>ul.mega-sub-menu>li.mega-menu-row .mega-menu-column>ul.mega-sub-menu>li.mega-menu-item {
+    display: flex;
+  }
+
+  //Правки оформления заказа
+
+  .col2-set {
+    display: flex;
+  }
+
+  .woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+    width: 59.4vw;
+    padding-top: 1.667vw;
+    padding-bottom: 4.167vw;
+    padding-left: 3.333vw;
+    padding-right: 3.333vw;
+  }
+
+  .woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+    width: 39.531vw;
+    background-color: #FAF6F4;
+  }
+
+  .entry-title {
+    text-align: center;
+    color: #1F316A;
+  }
+
+  .woocommerce-form-coupon-toggle {
+    display: none;
+  }
+
+  .woocommerce-billing-fields {
+    width: 45.313vw;
+    margin: 0 auto;
+  }
+
+  .woocommerce-billing-fields__field-wrapper {
+    width: 45.313vw;
+    margin: 0 auto;
+  }
+
+  #billing_country_field {
+    display: none;
+  }
+
+  #order_review_heading {
+    padding-top: 1.667vw;
+    padding-left: 3.333vw;
+    padding-right: 3.333vw;
+  }
+
+  .woocommerce-checkout-review-order {
+    padding-top: 1.042vw;
+    padding-left: 3.333vw;
+    padding-right: 3.333vw;
+  }
+  
+  .entry-footer {
+    display: none;
+  }
+
+  #post-8 {
+    margin: 0 !important;
+  }
+
+  .note {
+    width: 45.313vw;
+    margin: 0 auto;
+  }
+
+  .product-name br {
+    display: none;
+  }
+
+  //Отключение [object Object]
+
+  .fancybox-container {
+    display: none;
+  }
+
+  .woocommerce a.added_to_cart {
+    display: none;
   }
 
 }
@@ -514,6 +695,16 @@
   .woocommerce ul.products li.product .price {
     width: 9vw * $coefficient;
     font-size: 0.885vw * $coefficient;
+  }
+
+  .site-main-line {
+    width: 97.5vw;
+    padding: 0 !important;
+  }
+  .woocommerce .products ul,
+  .woocommerce ul.products {
+    width: 97.5vw;
+    padding: 0 !important;
   }
 
   .price-text {
@@ -560,10 +751,22 @@
 
   .woocommerce div.product p.price,
   .woocommerce div.product span.price {
-    width: 13vw * $coefficient;
     font-size: 1.250vw * $coefficient;
     line-height: 1.526vw * $coefficient;
   }
+
+  ins .woocommerce-Price-amount.amount bdi {
+    font-size: 1.75vw;
+    line-height: 2.1364vw;
+  }
+
+  del .woocommerce-Price-amount.amount bdi {
+    font-size: 1.75vw;
+    line-height: 2.1364vw;
+    margin-left: 0.7294vw;
+    margin-right: 1.3132vw;
+  }
+
 
   .star-rating span {}
 
@@ -722,6 +925,81 @@
 
   #wpgis-gallery .slick-slide img {
     border-radius: 0.208vw * $coefficient;
+    height: 2.7874vw;
+  }
+
+  //Правки корзины
+
+  #wpadminbar+#page>.vi-wcaio-sidebar-cart-icon-wrap {
+    top: 2.9vw;
+  }
+
+  .vi-wcaio-sidebar-cart-icon-wrap {
+    background: transparent;
+    position: fixed;
+    top: 0.54vw;
+    right: 1.83vw;
+    width: 2.083vw;
+    height: 2.083vw;
+  }
+
+  .twb_wc_reviews>div {
+    display: grid;
+    grid-template-columns: 7vw * $coefficient 60vw * $coefficient;
+
+    .woocommerce.twb_wc_reviews_ratings_wrap {
+      grid-column-end: 3;
+      grid-row-end: 1;
+    }
+
+    a {
+      grid-column-end: 3;
+      grid-row-end: 2;
+    }
+
+    .twb_wcr_author {
+      grid-column-end: 2;
+      grid-row-end: 1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .twb_wcr_date {
+      grid-row-end: 2;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+
+  .twb_wc_reviews .twb_wc_reviews_ratings_wrap .star-rating {
+    margin: 0;
+  }
+
+  .twb_wc_reviews .twb_wc_reviews_ct {
+    width: auto;
+    margin: 0;
+    text-align: left;
+  }
+
+  //Правки оформления заказа
+
+  .woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+    width: 56.1vw;
+    padding-top: 2.3338vw;
+    padding-bottom: 5.8338vw;
+    padding-left: 4.6662vw;
+    padding-right: 4.6662vw;
+  }
+
+  .woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+    width: 43.631vw;
+  }
+
+  //Правки хлебных крошек
+
+  .woocommerce-breadcrumb {
+    width: 97.5vw !important;
   }
 
 }
@@ -801,22 +1079,44 @@
 
 
   .woocommerce-page div.product div.images {
-    width: 100vw;
+    width: 100%;
   }
 
+  #wpgis-gallery .slick-list.draggable .slick-track {
+    transform: none !important;
+    width: 100vw !important;
+    display: flex;
+    justify-content: center;
+  } 
+
   .woocommerce-page div.product div.summary {
-    width: 100%;
+    width: 100vw;
+    padding: 5vw;
+    margin: 0 auto;
   }
 
   .woocommerce-page div.product .woocommerce-tabs {
-    width: 100%;
+    width: 91vw;
+    margin: 0 auto;
   }
 
   .woocommerce div.product p.price,
   .woocommerce div.product span.price {
-    width: 13vw * $coefficient;
     font-size: 1.250vw * $coefficient;
     line-height: 1.526vw * $coefficient;
+    justify-content: center;
+  }
+
+  ins .woocommerce-Price-amount.amount bdi {
+    font-size: 5vw;
+    line-height: 6.104vw;
+  }
+
+  del .woocommerce-Price-amount.amount bdi {
+    font-size: 5vw;
+    line-height: 6.104vw;
+    margin-left: 2.084vw;
+    margin-right: 3.752vw;
   }
 
   .star-rating span {}
@@ -999,6 +1299,7 @@
 
   #wpgis-gallery .slick-slide img {
     border-radius: 0.208vw * $coefficient;
+    height: 7.964vw;
   }
 
   //Переопределение настроек слайдера товаров на главной странице
@@ -1050,7 +1351,7 @@
 
     .wpsf-product-price {
       display: flex;
-      flex-direction: row-reverse;
+      flex-direction: row;
       align-items: center;
     }
 
@@ -1059,7 +1360,7 @@
       font-size: 0.885vw * $coefficient;
     }
 
-    .wpsf-product-price::after {
+    .wpsf-product-price::before {
       content: 'Цена:';
       font-weight: 700;
       font-size: 0.885vw * $coefficient;
@@ -1070,7 +1371,7 @@
 
     .wpsf-cart-button {
       position: absolute;
-      bottom: 3.933vw * $coefficient;
+      top: 9.333vw * $coefficient;
       left: 1.833vw * $coefficient;
       transition: 500ms;
       opacity: 0;
@@ -1081,6 +1382,94 @@
       opacity: 1;
     }
 
+  }
+
+  //Правки корзины
+
+  .vi-wcaio-sidebar-cart-icon-wrap {
+    background: transparent;
+    position: fixed;
+    top: 16.421vw;
+    right: 8.03vw;
+    width: 5.083vw;
+    height: 8.083vw;
+  }
+
+  .vi-wcaio-sidebar-cart-icon-1 .vi-wcaio-sidebar-cart-count-wrap,
+  .vi-wcaio-sidebar-cart-icon-5 .vi-wcaio-sidebar-cart-count-wrap {
+    top: 8px;
+  }
+
+  .twb_wc_reviews>div {
+    display: grid;
+    grid-template-columns: 7vw * $coefficient 62.6vw;
+
+    .woocommerce.twb_wc_reviews_ratings_wrap {
+      grid-column-end: 3;
+      grid-row-end: 1;
+    }
+
+    a {
+      grid-column-end: 3;
+      grid-row-end: 2;
+    }
+
+    .twb_wcr_author {
+      grid-column-end: 2;
+      grid-row-end: 1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .twb_wcr_date {
+      grid-row-end: 2;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+
+  .twb_wc_reviews .twb_wc_reviews_ratings_wrap .star-rating {
+    margin: 0;
+  }
+
+  .twb_wc_reviews .twb_wc_reviews_ct {
+    width: auto;
+    margin: 0;
+    text-align: left;
+  }
+
+  //Правки оформления заказа
+
+  .col2-set {
+    flex-direction: column-reverse;
+  }
+
+  .woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+    width: 100vw;
+    padding-top: 6.668vw;
+    padding-bottom: 16.668vw;
+    padding-left: 2.332vw;
+    padding-right: 2.332vw;
+  }
+
+  .woocommerce-billing-fields {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .woocommerce-billing-fields__field-wrapper {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .note {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+    width: 100vw;
   }
 
 }

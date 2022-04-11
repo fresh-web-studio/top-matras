@@ -43,7 +43,7 @@ get_header();
         ?>
     </section>
     <div class="flex-container">
-        <a href="categories-page.html" class="left-item image-link categories-item">
+        <a href="http://top-matras.shop/product-category/matrasy/" class="left-item image-link categories-item">
             <div class="item-content">
                 <div class="item-discount">15% Скидка</div>
                 <div class="item-title">Матрасы</div>
@@ -51,14 +51,14 @@ get_header();
             <div class="item-decoration-button"><span>Купить</span><i class="fa fa-angle-right"></i></div>
         </a>
         <div class="right-item_box half-1">
-            <a href="#" class="right-item-1 image-link categories-item">
+            <a href="http://top-matras.shop/product-category/namatrasniki/" class="right-item-1 image-link categories-item">
                 <div class="item-content">
                     <div class="item-discount">до 30% Скидка</div>
                     <div class="item-title">Наматрасники</div>
                 </div>
                 <div class="item-decoration-button">Купить<i class="fa fa-angle-right"></i></div>
             </a>
-            <a href="catalog.html" class="right-item-2 image-link categories-item">
+            <a href="http://top-matras.shop/product-category/boksy-krovati/" class="right-item-2 image-link categories-item">
                 <div class="item-content">
                     <div class="item-discount">15% Скидка</div>
                     <div class="item-title">Боксы кровати</div>
@@ -67,7 +67,7 @@ get_header();
             </a>
         </div>
         <div class="right-item_box half-2">
-            <a href="catalog.html" class="right-item-3 image-link categories-item">
+            <a href="http://top-matras.shop/product-category/ortopedicheskie-osnovaniya/" class="right-item-3 image-link categories-item">
                 <div class="item-content">
                     <div class="item-discount">до 30% Скидка</div>
                     <div class="item-title">Ортопедическое <br>
@@ -75,7 +75,7 @@ get_header();
                 </div>
                 <div class="item-decoration-button">Купить<i class="fa fa-angle-right"></i></div>
             </a>
-            <a href="catalog.html" class="right-item-4 image-link categories-item">
+            <a href="http://top-matras.shop/product-category/postelnoe-belyo/" class="right-item-4 image-link categories-item">
                 <div class="item-content">
                     <div class="item-discount">15% Скидка</div>
                     <div class="item-title">Постельное белье</div>
@@ -119,14 +119,12 @@ get_header();
                     </ul>
                 </div>
                 <div class="review-text">
-                    “Это правда, оригинальный матрас “Мануфактура сна” - отличное соотношение цены и качества.
-                    Благодаря
-                    технологии охлаждения я чувствую себя комфортно всю ночь”
+                    “Решил заказать матрасы в детскую на сайте компании Мануфактура сна. И сервис огонь, и доставка экспресс и товар крут. Ассортимент на любой кошелек, но линейка матрасов подороже по какой-то, супер технологии сделана.”
                 </div>
                 <div class="reviews-tag">
                     <div class="tag-name-city">
-                        <div class="tag-name">Катя</div>
-                        <div class="tag-city">Владивосток</div>
+                        <div class="tag-name">Виталий Эстин</div>
+                        <div class="tag-city">Казань</div>
                     </div>
                 </div>
                 <div class="reviews-button"><a href="reviews-page.html">Все отзывы</a></div>
@@ -144,14 +142,12 @@ get_header();
                     </ul>
                 </div>
                 <div class="review-text">
-                    “Это правда, оригинальный матрас “Мануфактура сна” - отличное соотношение цены и качества.
-                    Благодаря
-                    технологии охлаждения я чувствую себя комфортно всю ночь”
+                    “Спасибо компании Мануфактура сна за отличный матрас. Заказала через сайт, менеджер по телефону связался, задал уточняющие вопросы и стало понятно, что мне больше подойдет немного другой матрас. Удобная оплата, доставили очень быстро.”
                 </div>
                 <div class="reviews-tag">
                     <div class="tag-name-city">
-                        <div class="tag-name">Катя</div>
-                        <div class="tag-city">Владивосток</div>
+                        <div class="tag-name">Альфия</div>
+                        <div class="tag-city">Самара</div>
                     </div>
                 </div>
                 <div class="reviews-button"><a href="reviews-page.html">Все отзывы</a></div>
@@ -169,39 +165,12 @@ get_header();
                     </ul>
                 </div>
                 <div class="review-text">
-                    “Это правда, оригинальный матрас “Мануфактура сна” - отличное соотношение цены и качества.
-                    Благодаря
-                    технологии охлаждения я чувствую себя комфортно всю ночь”
+                    “Заказал матрас на сайте, оказалось ребята сами производители, поэтому и цена очень приятная. Выбрал доставку ТК. Матрас был у меня через три дня после заказа. Уже обновил его, поэтому смело рекомендую! Качество отличное”
                 </div>
                 <div class="reviews-tag">
                     <div class="tag-name-city">
-                        <div class="tag-name">Катя</div>
-                        <div class="tag-city">Владивосток</div>
-                    </div>
-                </div>
-                <div class="reviews-button"><a href="reviews-page.html">Все отзывы</a></div>
-            </div>
-            <div class="reviews">
-                <div class="stars">
-                    <ul>
-                        <li>
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star1.svg" alt="">
-                        </li>
-                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star1.svg" alt=""></li>
-                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star1.svg" alt=""></li>
-                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star1.svg" alt=""></li>
-                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star1.svg" alt=""></li>
-                    </ul>
-                </div>
-                <div class="review-text">
-                    “Это правда, оригинальный матрас “Мануфактура сна” - отличное соотношение цены и качества.
-                    Благодаря
-                    технологии охлаждения я чувствую себя комфортно всю ночь”
-                </div>
-                <div class="reviews-tag">
-                    <div class="tag-name-city">
-                        <div class="tag-name">Катя</div>
-                        <div class="tag-city">Владивосток</div>
+                        <div class="tag-name">Алексей Иванов</div>
+                        <div class="tag-city">Москва</div>
                     </div>
                 </div>
                 <div class="reviews-button"><a href="reviews-page.html">Все отзывы</a></div>
@@ -216,7 +185,7 @@ get_header();
                     <div class="reviews-decoration-button">Купить<i class="fa fa-angle-right"></i></div>
                     <div class="mobile-decoration-button">
                         <div class="second-reviews-name-mobile">
-                            Sweet Sleep art.004<i class="fa fa-angle-right"></i>
+                            Sweet Sleep art.96 5<i class="fa fa-angle-right"></i>
                         </div>
                         <div class="purchase-mobile">Цена: <span class="discount-price-mobile">18 395 &#8381;</span>
                             <span class="price-mobile">18 395
@@ -225,7 +194,7 @@ get_header();
                     </div>
                 </a>
                 <div class="second-reviews-name">
-                    Sweet Sleep art.004
+                    Sweet Sleep art.96 5
                 </div>
                 <div class="purchase">Цена: <span class="discount-price">18 395 &#8381;</span> <span class="price">18 395
                         &#8381;</span>
@@ -239,7 +208,7 @@ get_header();
                     <div class="reviews-decoration-button">Купить<i class="fa fa-angle-right"></i></div>
                     <div class="mobile-decoration-button">
                         <div class="second-reviews-name-mobile">
-                            Sweet Sleep art.004<i class="fa fa-angle-right"></i>
+                            Sweet Sleep art.96 4<i class="fa fa-angle-right"></i>
                         </div>
                         <div class="purchase-mobile">Цена: <span class="discount-price-mobile">18 395 &#8381;</span>
                             <span class="price-mobile">18 395
@@ -248,7 +217,7 @@ get_header();
                     </div>
                 </a>
                 <div class="second-reviews-name">
-                    Sweet Sleep art.004
+                    Sweet Sleep art.96 4
                 </div>
                 <div class="purchase">Цена: <span class="discount-price">18 395 &#8381;</span> <span class="price">18 395
                         &#8381;</span>
@@ -265,8 +234,8 @@ get_header();
                         <div class="second-reviews-name-mobile">
                             Sweet Sleep art.004<i class="fa fa-angle-right"></i>
                         </div>
-                        <div class="purchase-mobile">Цена: <span class="discount-price-mobile">18 395 &#8381;</span>
-                            <span class="price-mobile">18 395
+                        <div class="purchase-mobile">Цена: <span class="discount-price-mobile">3 497 &#8381;</span>
+                            <span class="price-mobile">4 995
                                 &#8381;</span>
                         </div>
                     </div>
@@ -274,31 +243,7 @@ get_header();
                 <div class="second-reviews-name">
                     Sweet Sleep art.004
                 </div>
-                <div class="purchase">Цена: <span class="discount-price">18 395 &#8381;</span> <span class="price">18 395
-                        &#8381;</span>
-                </div>
-            </div>
-            <div class="second-reviews">
-                <a href="product-page.html" class="reviews-image">
-                    <div class="reviews-image-content">
-                        до 30% Скидка
-                    </div>
-                    <div class="reviews-decoration-button">Купить<i class="fa fa-angle-right"></i></div>
-                    <div class="mobile-decoration-button">
-                        <div class="second-reviews-name-mobile">
-                            Sweet Sleep art.004<i class="fa fa-angle-right"></i>
-                        </div>
-                        <div class="purchase-mobile">Цена: <span class="discount-price-mobile">18 395 &#8381;</span>
-                            <span class="price-mobile">18 395
-                                &#8381;</span>
-                        </div>
-                    </div>
-
-                </a>
-                <div class="second-reviews-name">
-                    Sweet Sleep art.004
-                </div>
-                <div class="purchase">Цена: <span class="discount-price">18 395 &#8381;</span> <span class="price">18 395
+                <div class="purchase">Цена: <span class="discount-price">3 497 &#8381;</span> <span class="price">4 995
                         &#8381;</span>
                 </div>
             </div>
@@ -337,7 +282,7 @@ get_header();
     <div class="product-page-reviews">
         <div class="product-page-reviews-container">
             <h1 class="product-page-reviews_title">Посмотрите почему люди любят наши матрасы</h1>
-            <div class="filter-reviews">
+            <!--<div class="filter-reviews">
                 <div class="filter-reviews_title">Фильтр отзывов:</div>
                 <ul id="myTab" class="nav nav-pills">
                     <li class="nav-item">
@@ -364,7 +309,7 @@ get_header();
                         </ul>
                     </li>
                 </ul>
-            </div>
+            </div>-->
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="description">
                     <div class="reviews-items slider">
@@ -373,7 +318,7 @@ get_header();
                                 <div class="reviews-item_content">
                                     <div class="product-page-reviews_tag">
                                         <div class="tag-name-city">
-                                            <div class="name">Костя</div>
+                                            <div class="name">Снежанна</div>
                                             <div class="city">Екатеринбург</div>
                                         </div>
                                     </div>
@@ -382,15 +327,13 @@ get_header();
                                         <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
                                         <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
                                         <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
-                                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star4.svg" alt=""></li>
+                                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
                                     </ul>
                                     <div class="product-page-reviews_content">
                                         <div class="reviews-item_title">Идеально подходит для легкого сна</div>
                                         <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
-                                            несколько
-                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
-                                            меняет
-                                            жизнь!
+                                            несколько матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
+                                            меняет жизнь!
                                             Теперь мне нужно бороться с собакой за место в постели и ...</div>
                                     </div>
                                     <a href="reviews-page.html" class="read-more">Читать полностью...</a>
@@ -402,8 +345,8 @@ get_header();
                                 <div class="reviews-item_content">
                                     <div class="product-page-reviews_tag">
                                         <div class="tag-name-city">
-                                            <div class="name">Костя</div>
-                                            <div class="city">Екатеринбург</div>
+                                            <div class="name">Анна Петрова</div>
+                                            <div class="city">Москва</div>
                                         </div>
                                     </div>
                                     <ul>
@@ -411,16 +354,11 @@ get_header();
                                         <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
                                         <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
                                         <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
-                                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star4.svg" alt=""></li>
+                                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
                                     </ul>
                                     <div class="product-page-reviews_content">
                                         <div class="reviews-item_title">Идеально подходит для легкого сна</div>
-                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
-                                            несколько
-                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
-                                            меняет
-                                            жизнь!
-                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                        <div class="product-page-reviews_text">Менеджер грамотно и быстро сориентировал по заказу и всем моментам. Матрас через три дня уже был у меня дома. Оплатила курьеру при доставке. На матрас действует гарантия 5 лет. Думаю прослужит еще дольше.</div>
                                     </div>
                                     <a href="#" class="read-more">Читать полностью...</a>
                                 </div>
@@ -431,8 +369,8 @@ get_header();
                                 <div class="reviews-item_content">
                                     <div class="product-page-reviews_tag">
                                         <div class="tag-name-city">
-                                            <div class="name">Костя</div>
-                                            <div class="city">Екатеринбург</div>
+                                            <div class="name">Маргарита Сканди</div>
+                                            <div class="city">Нальчик</div>
                                         </div>
                                     </div>
                                     <ul>
@@ -440,16 +378,11 @@ get_header();
                                         <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
                                         <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
                                         <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
-                                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star4.svg" alt=""></li>
+                                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
                                     </ul>
                                     <div class="product-page-reviews_content">
                                         <div class="reviews-item_title">Идеально подходит для легкого сна</div>
-                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
-                                            несколько
-                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
-                                            меняет
-                                            жизнь!
-                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                        <div class="product-page-reviews_text">Спасибо за отличный матрас. Хороший выбор на сайте и при этом все четко и понятно. Матрас высокий, ткань приятная. Очень стильно смотрится.</div>
                                     </div>
                                     <a href="#" class="read-more">Читать полностью...</a>
                                 </div>
@@ -460,8 +393,8 @@ get_header();
                                 <div class="reviews-item_content">
                                     <div class="product-page-reviews_tag">
                                         <div class="tag-name-city">
-                                            <div class="name">Костя</div>
-                                            <div class="city">Екатеринбург</div>
+                                            <div class="name">Виталий Эстин</div>
+                                            <div class="city">Казань</div>
                                         </div>
                                     </div>
                                     <ul>
@@ -469,16 +402,11 @@ get_header();
                                         <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
                                         <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
                                         <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
-                                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star4.svg" alt=""></li>
+                                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
                                     </ul>
                                     <div class="product-page-reviews_content">
                                         <div class="reviews-item_title">Идеально подходит для легкого сна</div>
-                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
-                                            несколько
-                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
-                                            меняет
-                                            жизнь!
-                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                        <div class="product-page-reviews_text">Решил заказать матрасы в детскую на сайте компании Мануфактура сна. Спасибо! И сервис огонь, и доставка экспресс и товар крут. Ассортимент на любой кошелек, но линейка матрасов подороже по какой-то, супер технологии сделана. Такие матрасы обычно сумасшедших денег стоят в магазинах, а здесь можно по адекватным ценам купить.</div>
                                     </div>
                                     <a href="#" class="read-more">Читать полностью...</a>
                                 </div>
@@ -489,8 +417,8 @@ get_header();
                                 <div class="reviews-item_content">
                                     <div class="product-page-reviews_tag">
                                         <div class="tag-name-city">
-                                            <div class="name">Костя</div>
-                                            <div class="city">Екатеринбург</div>
+                                            <div class="name">Альфия</div>
+                                            <div class="city">Самара</div>
                                         </div>
                                     </div>
                                     <ul>
@@ -498,16 +426,11 @@ get_header();
                                         <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
                                         <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
                                         <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
-                                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star4.svg" alt=""></li>
+                                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
                                     </ul>
                                     <div class="product-page-reviews_content">
                                         <div class="reviews-item_title">Идеально подходит для легкого сна</div>
-                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
-                                            несколько
-                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
-                                            меняет
-                                            жизнь!
-                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                        <div class="product-page-reviews_text">Спасибо компании Мануфактура сна за отличный матрас. Заказала через сайт, менеджер по телефону связался, задал уточняющие вопросы и стало понятно, что мне больше подойдет немного другой матрас. Удобная оплата на сайте, доставили очень быстро. </div>
                                     </div>
                                     <a href="#" class="read-more">Читать полностью...</a>
                                 </div>
@@ -518,8 +441,8 @@ get_header();
                                 <div class="reviews-item_content">
                                     <div class="product-page-reviews_tag">
                                         <div class="tag-name-city">
-                                            <div class="name">Костя</div>
-                                            <div class="city">Екатеринбург</div>
+                                            <div class="name">Алексей Иванов</div>
+                                            <div class="city">Москва</div>
                                         </div>
                                     </div>
                                     <ul>
@@ -527,16 +450,11 @@ get_header();
                                         <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
                                         <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
                                         <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
-                                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star4.svg" alt=""></li>
+                                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Star3.svg" alt=""></li>
                                     </ul>
                                     <div class="product-page-reviews_content">
                                         <div class="reviews-item_title">Идеально подходит для легкого сна</div>
-                                        <div class="product-page-reviews_text">Мне было трудно спать, и я перебрала
-                                            несколько
-                                            матрасов, прежде чем наконец опробовать “Мануфактуру сна”. Это абсолютно
-                                            меняет
-                                            жизнь!
-                                            Теперь мне нужно бороться с собакой за место в постели и ...</div>
+                                        <div class="product-page-reviews_text">Заказал матрас на сайте, оказалось ребята сами производители, поэтому и цена очень приятная. Выбрал доставку ТК. Матрас был у меня через три дня после заказа. Уже обновил его, поэтому смело рекомендую! Качество отличное</div>
                                     </div>
                                     <a href="#" class="read-more">Читать полностью...</a>
                                 </div>
