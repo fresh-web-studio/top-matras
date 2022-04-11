@@ -82,10 +82,10 @@
                 <!---<script src="js/header_main-menu.js"></script>
                 Изменение цвета меню--->
                 <div class="header-right">
-                    <a href="#modal" class="map">
+                    <div href="#modal" class="map">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/map.svg" alt="">
                         <div class="map-name"><?php echo do_shortcode('[wt_geotargeting get="city"]'); ?></div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </header>

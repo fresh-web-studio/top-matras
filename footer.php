@@ -77,10 +77,11 @@
                         </div>
                         <div class="footer__menu-link">
                             <?php echo do_shortcode('[wt_geotargeting type="phone" city_show="Москва"]<a href="tel:+79636998650" class="footer__tel">+7 963 699-86-50</a>[/wt_geotargeting]'); ?>
-                            <?php echo do_shortcode('[wt_geotargeting type="phone" city_show="Владивосток"]<a href="tel:+79636998651" class="footer__tel">+7 963 699-86-51</a>[/wt_geotargeting]'); ?>
+                            <?php echo do_shortcode('[wt_geotargeting type="phone" default="true"]<a href="tel:+79636998650" class="footer__tel">+7 963 699-86-50</a>[/wt_geotargeting]'); ?>
                         </div>
                         <div class="footer__menu-link">
-                            <a href="mailto:info@top-matras.shop" class="footer__mail">info@top-matras.shop</a>
+                            <?php echo do_shortcode('[wt_geotargeting type="mail" city_show="Москва"]<a href="mailto:sale@top-matras.shop" class="footer__mail">info@top-matras.shop</a>[/wt_geotargeting]'); ?>
+                            <?php echo do_shortcode('[wt_geotargeting type="mail" default="true"]<a href="mailto:sale@top-matras.shop" class="footer__mail">info@top-matras.shop</a>[/wt_geotargeting]'); ?>
                         </div>
                     </div>
                 </div>
