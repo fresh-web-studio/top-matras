@@ -80,8 +80,8 @@
                             <?php echo do_shortcode('[wt_geotargeting type="phone" default="true"]<a href="tel:+79636998650" class="footer__tel">+7 963 699-86-50</a>[/wt_geotargeting]'); ?>
                         </div>
                         <div class="footer__menu-link">
-                            <?php echo do_shortcode('[wt_geotargeting type="mail" city_show="Москва"]<a href="mailto:sale@top-matras.shop" class="footer__mail">info@top-matras.shop</a>[/wt_geotargeting]'); ?>
-                            <?php echo do_shortcode('[wt_geotargeting type="mail" default="true"]<a href="mailto:sale@top-matras.shop" class="footer__mail">info@top-matras.shop</a>[/wt_geotargeting]'); ?>
+                            <?php echo do_shortcode('[wt_geotargeting type="mail" city_show="Москва"]<a href="mailto:sale@top-matras.shop" class="footer__mail">sale@top-matras.shop</a>[/wt_geotargeting]'); ?>
+                            <?php echo do_shortcode('[wt_geotargeting type="mail" default="true"]<a href="mailto:sale@top-matras.shop" class="footer__mail">sale@top-matras.shop</a>[/wt_geotargeting]'); ?>
                         </div>
                     </div>
                 </div>
@@ -91,8 +91,8 @@
             <div class="container">
                 <div class="footer__row-copyright">
                     <i class="fa fa-copyright"></i>
-                    <div class="year">2022</div>
-                    <a href="#" class="policy">Политика конфиденциальности</a>
+                    <div class="year">2021-<script type="text/javascript"> document.write(new Date().getFullYear()); </script></div>
+                    <a href="/privacy-policy/" class="policy">Политика конфиденциальности</a>
                 </div>
             </div>
         </div>
@@ -153,7 +153,7 @@
     document.getElementById("mega-menu-item-55").append(discountMenu1);
 
     // Вставка текста в тег div
-    discountMenu1.innerHTML = "<span>15% OFF</span>";
+    discountMenu1.innerHTML = "<span>30% OFF</span>";
 </script>
 <script>
     const discountMenu2 = document.createElement("div");
@@ -162,7 +162,7 @@
 
     document.getElementById("mega-menu-item-56").append(discountMenu2);
 
-    discountMenu2.innerHTML = "<span>10% OFF</span>";
+    discountMenu2.innerHTML = "<span>30% OFF</span>";
 </script>
 <script>
     const discountMenu3 = document.createElement("div");
@@ -171,7 +171,7 @@
 
     document.getElementById("mega-menu-item-53").append(discountMenu3);
 
-    discountMenu3.innerHTML = "<span>20% OFF</span>";
+    discountMenu3.innerHTML = "<span>30% OFF</span>";
 </script>
 <script>
     if (document.getElementById('billing_email')) {
@@ -209,6 +209,11 @@
         document.getElementById("border-image_1").after(paymentAdv);
 
         paymentAdv.innerHTML = "<div class='advantages-ordering_title'>Преимущества каждого матраса</div><div class='advantages-items'><div class='advantages-item'><img src='<?php echo get_template_directory_uri(); ?>/assets/images/advantages1.svg' alt='Преимущества'><div class='advantages-title'>Поболтай с нами</div></div><div class='advantages-item'><img src='<?php echo get_template_directory_uri(); ?>/assets/images/advantages2.svg' alt='Преимущества'><div class='advantages-title'>Гарантия качества</div></div><div class='advantages-item'><img src='<?php echo get_template_directory_uri(); ?>/assets/images/advantages3.svg' alt='Преимущества'><div class='advantages-title'>Позвони нам</div></div></div>";
+    }
+</script>
+<script>
+    if (document.getElementById('ready')) {
+        document.querySelector('footer').style.padding = '0';
     }
 </script>
 

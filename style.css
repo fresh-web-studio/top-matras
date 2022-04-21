@@ -101,7 +101,7 @@ body {
 .container-md,
 .container-sm,
 .container {
-  max-width: 100vw;
+  max-width: 100vw !important;
 }
 
 @media all and (max-width: 1366px) {
@@ -1387,6 +1387,14 @@ textarea {
   cursor: pointer;
 }
 
+#wpadminbar + .header + .main > .main-slider {
+  margin-top: 4.7vw !important;
+}
+
+.header + .main > .main-slider {
+  margin-top: 3vw !important;
+}
+
 @media all and (max-width: 1366px) {
   /* fix Фиксированного меню */
   #wpadminbar + #page > .header {
@@ -1453,7 +1461,7 @@ textarea {
     padding: 1.0206vw 1.0206vw;
   }
   .header .header-wrapper .header-right .map {
-    margin-right: 0.8022vw;
+    margin-right: 2.6022vw;
   }
   .header .header-wrapper .header-right .map .map-name {
     font-size: 0.938vw;
@@ -1621,6 +1629,9 @@ textarea {
   .header .header-wrapper .hamburger-inner::after {
     width: 1.6044vw !important;
     height: 0.1456vw;
+  }
+  .header + .main > .main-slider {
+    margin-top: 31.504vw;
   }
   footer .footer__row {
     padding: 3.864vw 0 7vw;
@@ -1826,6 +1837,9 @@ textarea {
     width: 6vw !important;
     height: 0.416vw;
     top: 1.7vw;
+  }
+  .header + .main > .main-slider {
+    margin-top: 25vw !important;
   }
   /** /mmenu **/
   .container {

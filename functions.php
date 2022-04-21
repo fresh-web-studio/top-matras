@@ -167,7 +167,6 @@ function top_matras_shop_scripts()
     wp_enqueue_script('slick3-settings-js', get_template_directory_uri() . '/assets/js/slick3.js', array(), _S_VERSION, true);
     wp_enqueue_script('second-page-settings-js', get_template_directory_uri() . '/assets/js/second-page-reviews.js', array(), _S_VERSION, true);
     wp_enqueue_script('all-settings-js', get_template_directory_uri() . '/assets/js/all-settings.js', array(), _S_VERSION, true);
-/*    wp_enqueue_script('litezoom-js', get_template_directory_uri() . '/assets/js/litezoom.min.js', array(), _S_VERSION, true);*/
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
@@ -254,7 +253,7 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
 } else {
     echo 'WooCommerce is not Active.';
 }
-//Rename
+//Rename добавить в корзину
 add_filter('woocommerce_product_add_to_cart_text', 'custom_woocommerce_product_add_to_cart_text');
 function custom_woocommerce_product_add_to_cart_text()
 {
@@ -355,28 +354,29 @@ function truemisha_discount_percentage($price, $regular_price, $sale_price)
 
 //Изменение порядка вывода полей в оформлении заказа woocommerce
 
-function sort_fields_billing($fields) {
+function sort_fields_billing($fields)
+{
 
-	$fields["billing"]["billing_first_name"]["priority"] = 2;
-	$fields["billing"]["billing_last_name"]["priority"] = 3;
-	$fields["billing"]["billing_company"]["priority"] = 4;
-	$fields["billing"]["billing_address_1"]["priority"] = 8;
-	$fields["billing"]["billing_city"]["priority"] = 7;
-	$fields["billing"]["billing_postcode"]["priority"] = 8;
-	$fields["billing"]["billing_country"]["priority"] = 5;
-	$fields["billing"]["billing_state"]["priority"] = 6;
-	$fields["billing"]["billing_email"]["priority"] = 1;
-	$fields["billing"]["billing_phone"]["priority"] = 10;
-	
-	return $fields;
-	
+    $fields["billing"]["billing_first_name"]["priority"] = 2;
+    $fields["billing"]["billing_last_name"]["priority"] = 3;
+    $fields["billing"]["billing_company"]["priority"] = 4;
+    $fields["billing"]["billing_address_1"]["priority"] = 8;
+    $fields["billing"]["billing_city"]["priority"] = 7;
+    $fields["billing"]["billing_postcode"]["priority"] = 8;
+    $fields["billing"]["billing_country"]["priority"] = 5;
+    $fields["billing"]["billing_state"]["priority"] = 6;
+    $fields["billing"]["billing_email"]["priority"] = 1;
+    $fields["billing"]["billing_phone"]["priority"] = 10;
+
+    return $fields;
 }
 
 add_filter("woocommerce_checkout_fields", "sort_fields_billing");
 
 //Rename Sale
 add_filter('woocommerce_sale_flash', 'my_custom_sale_flash', 10, 3);
-function my_custom_sale_flash($text, $post, $_product) {
+function my_custom_sale_flash($text, $post, $_product)
+{
     return '
 <span class="onsale"> Акция! </span>
 ';

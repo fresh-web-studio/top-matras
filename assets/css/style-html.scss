@@ -208,7 +208,7 @@ svg {
             text-decoration: none;
             flex-direction: column;
             justify-content: flex-end;
-            margin-right: 0.573vw;
+            margin-right: 1.573vw;
           }
 
           .shopping-cart {
@@ -2132,7 +2132,7 @@ svg {
   }
 
   .slick-slide {
-    margin: 0 20px;
+    margin: 0 1px;
   }
 
   .slick-slide img {
@@ -2339,6 +2339,14 @@ svg {
     margin: 10.408vw 1.198vw;
   }
 
+  .first-regular .slick-slide {
+    opacity: 0;
+  }
+
+  .first-regular .slick-active {
+    opacity: 1 !important;
+  }
+
   .reviews {
     display: flex;
     flex-direction: column;
@@ -2439,14 +2447,23 @@ svg {
 
     .reviews-image {
       display: block;
-      background: url(../images/Rectangle2.jpg) no-repeat;
       width: 18.646vw;
       height: 23.125vw;
-      background-size: 100%;
       position: relative;
       overflow: hidden;
       transition: all 0.3s ease-in-out 0s;
-
+    }
+    .reviews-image.reviews-image-slide1 {
+      background: url(../images/008.1-slider1.jpg) no-repeat;
+      background-size: 100%;
+    }
+    .reviews-image.reviews-image-slide2 {
+      background: url(../images/Rectangle2.jpg) no-repeat;
+      background-size: 100%;
+    }
+    .reviews-image.reviews-image-slide3 {
+      background: url(../images/004.1-slider.jpg) no-repeat;
+      background-size: 100%;
     }
 
     .reviews-image-content {
@@ -2744,7 +2761,7 @@ svg {
   .first-regular .slick-dots {
     position: absolute;
     bottom: 0.77vw;
-    left: 3.8vw;
+    left: 2.8vw;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -3919,7 +3936,6 @@ svg {
 
   .product-price-container {
     display: flex;
-    margin-top: 0.586vw;
   }
 
   .product-discount_price {
@@ -5374,7 +5390,7 @@ svg {
 
   footer {
     color: white;
-
+    padding-top: 4vw;
     a {
       color: white;
 
@@ -7034,6 +7050,10 @@ svg {
       padding-bottom: 0.481vw;
     }
   }
+
+  .contact-text {
+    margin-bottom: 0.417vw;
+  }
 }
 
 @media all and (max-width: 1366px) {
@@ -8199,8 +8219,6 @@ svg {
 
   .fa {
     font-size: 0.938vw * $coefficient;
-    margin-left: 0.521vw * $coefficient;
-
   }
 
   html,
@@ -8214,7 +8232,7 @@ svg {
   }
 
   .slick-slide {
-    margin: 0 20px;
+    margin: 0 0;
   }
 
   .slick-slide img {
@@ -8482,8 +8500,7 @@ svg {
 
   .second-slider .fa {
     font-size: 0.938vw * $coefficient;
-    margin-left: 0.521vw * $coefficient;
-
+    margin-left: 0;
   }
 
   .second-slider:hover .slick-arrow {}
@@ -9803,7 +9820,7 @@ svg {
   }
 
   .slick-slide {
-    margin-left: 0.417vw * $coefficient;
+    //margin-left: 0.417vw * $coefficient;
     margin-right: 0.417vw * $coefficient;
   }
 
@@ -9937,7 +9954,7 @@ svg {
   }
 
   .slick-arrow {
-    padding: 0.443vw * $coefficient 1.1124vw * $coefficient;
+    padding: 0.443vw * $coefficient 0.924vw * $coefficient;
   }
 
   .reviews-items:hover .slick-arrow {
@@ -10014,7 +10031,6 @@ svg {
       font-size: 0.938vw * $coefficient;
       line-height: 2vw * $coefficient;
     }
-
     .footer__social {
       margin-bottom: 0.521vw * $coefficient;
     }
@@ -12569,7 +12585,9 @@ svg {
   .main-slider .slider-item {
     background: url(../images/slid1-bg.svg);
     width: 100vw;
-    height: 40.104vw * $coefficient;
+    height: 40vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 
   .main-slider .slick-dots {
@@ -12579,12 +12597,12 @@ svg {
   .slider-content {}
 
   .slider-title {
-    font-size: 3.385vw * $coefficient;
+    font-size: 6.54vw;
     text-align: center;
   }
 
   .slider-description {
-    font-size: 1.146vw * $coefficient;
+    font-size: 3.684vw;
     line-height: 1.399vw * $coefficient;
     margin-top: 0.521vw * $coefficient;
     margin-bottom: 2.083vw * $coefficient;
@@ -12637,6 +12655,7 @@ svg {
 
   .main-slider .slick-dots {
     position: absolute;
+    display: flex !important;
     bottom: 0.781vw * $coefficient;
     list-style: none;
     display: block;
@@ -14291,7 +14310,9 @@ svg {
     }
   }
 
-  .materials-description {}
+  .materials-description {
+    align-items: center;
+  }
 
   .materials-title {
     font-size: 2.500vw * $coefficient;
@@ -14304,6 +14325,7 @@ svg {
     font-size: 1.354vw * $coefficient;
     line-height: 2.031vw * $coefficient;
     margin-bottom: 0.833vw * $coefficient;
+    text-align: center;
   }
 
   .materials-content.materials-right {
@@ -14319,7 +14341,7 @@ svg {
     }
 
     .materials-text {
-      text-align: left;
+      text-align: center;
     }
   }
 
@@ -14531,8 +14553,8 @@ svg {
   }
 
   .slick-slide {
-    margin-left: 0.417vw * $coefficient;
-    margin-right: 0.417vw * $coefficient;
+    //margin-left: 0.417vw * $coefficient;
+    //margin-right: 0.417vw * $coefficient;
   }
 
   .product-page-reviews {
@@ -14673,7 +14695,7 @@ svg {
   }
 
   .tag-name-city {
-    width: 20.241vw;
+    width: 21.241vw;
   }
 
   .name {

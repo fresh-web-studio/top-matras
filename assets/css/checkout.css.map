@@ -1,7 +1,9 @@
 {
-"version": 3,
-"mappings": "AACA,gDAAkD;EAChD,KAAK,EAAE,QAAQ;EACf,MAAM,EAAE,MAAM",
-"sources": ["checkout.scss"],
-"names": [],
-"file": "checkout.css"
+    "version": 3,
+    "mappings": "AACA,AAAA,UAAU,CAAC,YAAY,EAAE,SAAS,CAAC,aAAa,CAAE;EAChD,KAAK,EAAE,QAAQ;EACf,MAAM,EAAE,MAAM;CACf",
+    "sources": [
+        "checkout.scss"
+    ],
+    "names": [],
+    "file": "checkout.css"
 }

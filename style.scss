@@ -1285,6 +1285,14 @@ textarea {
 	cursor: pointer;
 }
 
+#wpadminbar + .header + .main > .main-slider {
+	margin-top: 4.7vw !important;
+}
+
+.header + .main > .main-slider {
+	margin-top: 3vw !important;
+}
+
 
 
 
@@ -1381,7 +1389,7 @@ textarea {
 			.header-right {
 
 				.map {
-					margin-right: 0.573vw * $coefficient;
+					margin-right: 2.6022vw;
 
 					.map-name {
 						font-size: 0.938vw;
@@ -1559,6 +1567,10 @@ textarea {
 	.header .header-wrapper .hamburger-inner::after {
 		width: 1.146vw * $coefficient !important;
 		height: 0.104vw * $coefficient;
+	}
+
+	.header + .main > .main-slider {
+		margin-top: 31.504vw;
 	}
 
 	footer {
@@ -1783,6 +1795,10 @@ textarea {
 		height: 0.104vw * $coefficient;
 		top: 1.7vw;
 	}
+
+    .header + .main > .main-slider {
+        margin-top: 25vw !important;
+    }
 
 	/** /mmenu **/
 

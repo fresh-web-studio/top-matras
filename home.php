@@ -93,12 +93,14 @@ get_header();
                     <li class="reviews">
                         <div class="comment-inner">
                             <div class="review-text">
-                                "<?php //echo $comment->comment_content; ?>"
+                                "<?php //echo $comment->comment_content; 
+                                    ?>"
                             </div>
                             <div class="reviews-tag">
                                 <div class="tag-name-city">
                                     <div class="tag-name">
-                                        <?php //echo $comment->comment_author; ?>
+                                        <?php //echo $comment->comment_author; 
+                                        ?>
                                     </div>
                                 </div>
                             </div>
@@ -127,7 +129,7 @@ get_header();
                         <div class="tag-city">Казань</div>
                     </div>
                 </div>
-                <div class="reviews-button"><a href="reviews-page.html">Все отзывы</a></div>
+                <div class="reviews-button"><a href="http://top-matras.shop/reviews/">Все отзывы</a></div>
             </div>
             <div class="reviews">
                 <div class="stars">
@@ -150,7 +152,7 @@ get_header();
                         <div class="tag-city">Самара</div>
                     </div>
                 </div>
-                <div class="reviews-button"><a href="reviews-page.html">Все отзывы</a></div>
+                <div class="reviews-button"><a href="http://top-matras.shop/reviews/">Все отзывы</a></div>
             </div>
             <div class="reviews">
                 <div class="stars">
@@ -173,59 +175,60 @@ get_header();
                         <div class="tag-city">Москва</div>
                     </div>
                 </div>
-                <div class="reviews-button"><a href="reviews-page.html">Все отзывы</a></div>
+                <div class="reviews-button"><a href="http://top-matras.shop/reviews/">Все отзывы</a></div>
             </div>
         </div>
         <div class="second-regular slider">
             <div class="second-reviews">
-                <a href="product-page.html" class="reviews-image">
+                <a href="/product/sweet-sleep-art-008/" class="reviews-image reviews-image-slide1">
                     <div class="reviews-image-content">
                         до 30% Скидка
                     </div>
                     <div class="reviews-decoration-button">Купить<i class="fa fa-angle-right"></i></div>
                     <div class="mobile-decoration-button">
                         <div class="second-reviews-name-mobile">
-                            Sweet Sleep art.96 5<i class="fa fa-angle-right"></i>
+                            Sweet Sleep art.008<i class="fa fa-angle-right"></i>
                         </div>
-                        <div class="purchase-mobile">Цена: <span class="discount-price-mobile">18 395 &#8381;</span>
-                            <span class="price-mobile">18 395
+                        <div class="purchase-mobile">Цена: <span class="discount-price-mobile">4 347 &#8381;</span>
+                            <span class="price-mobile">6 210
                                 &#8381;</span>
                         </div>
                     </div>
                 </a>
                 <div class="second-reviews-name">
-                    Sweet Sleep art.96 5
+                    Sweet Sleep art.008
                 </div>
-                <div class="purchase">Цена: <span class="discount-price">18 395 &#8381;</span> <span class="price">18 395
-                        &#8381;</span>
-                </div>
-            </div>
-            <div class="second-reviews">
-                <a href="product-page.html" class="reviews-image">
-                    <div class="reviews-image-content">
-                        до 30% Скидка
-                    </div>
-                    <div class="reviews-decoration-button">Купить<i class="fa fa-angle-right"></i></div>
-                    <div class="mobile-decoration-button">
-                        <div class="second-reviews-name-mobile">
-                            Sweet Sleep art.96 4<i class="fa fa-angle-right"></i>
-                        </div>
-                        <div class="purchase-mobile">Цена: <span class="discount-price-mobile">18 395 &#8381;</span>
-                            <span class="price-mobile">18 395
-                                &#8381;</span>
-                        </div>
-                    </div>
-                </a>
-                <div class="second-reviews-name">
-                    Sweet Sleep art.96 4
-                </div>
-                <div class="purchase">Цена: <span class="discount-price">18 395 &#8381;</span> <span class="price">18 395
+                <div class="purchase">Цена: <span class="discount-price">4 347 &#8381;</span> <span class="price">6 210
                         &#8381;</span>
                 </div>
 
             </div>
             <div class="second-reviews">
-                <a href="product-page.html" class="reviews-image">
+                <a href="/product/sweet-sleep-art-072/" class="reviews-image reviews-image-slide2">
+                    <div class="reviews-image-content">
+                        до 30% Скидка
+                    </div>
+                    <div class="reviews-decoration-button">Купить<i class="fa fa-angle-right"></i></div>
+                    <div class="mobile-decoration-button">
+                        <div class="second-reviews-name-mobile">
+                            Sweet Sleep art.072<i class="fa fa-angle-right"></i>
+                        </div>
+                        <div class="purchase-mobile">Цена: <span class="discount-price-mobile">16 160 &#8381;</span>
+                            <span class="price-mobile">23 085
+                                &#8381;</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="second-reviews-name">
+                    Sweet Sleep art.072
+                </div>
+                <div class="purchase">Цена: <span class="discount-price">16 160 &#8381;</span> <span class="price">23 085
+                        &#8381;</span>
+                </div>
+
+            </div>
+            <div class="second-reviews">
+                <a href="/product/sweet-sleep-art-004/" class="reviews-image reviews-image-slide3">
                     <div class="reviews-image-content">
                         до 30% Скидка
                     </div>
@@ -246,6 +249,7 @@ get_header();
                 <div class="purchase">Цена: <span class="discount-price">3 497 &#8381;</span> <span class="price">4 995
                         &#8381;</span>
                 </div>
+
             </div>
         </div>
     </div>
@@ -336,7 +340,6 @@ get_header();
                                             меняет жизнь!
                                             Теперь мне нужно бороться с собакой за место в постели и ...</div>
                                     </div>
-                                    <a href="reviews-page.html" class="read-more">Читать полностью...</a>
                                 </div>
                             </div>
                         </div>
@@ -360,7 +363,7 @@ get_header();
                                         <div class="reviews-item_title">Идеально подходит для легкого сна</div>
                                         <div class="product-page-reviews_text">Менеджер грамотно и быстро сориентировал по заказу и всем моментам. Матрас через три дня уже был у меня дома. Оплатила курьеру при доставке. На матрас действует гарантия 5 лет. Думаю прослужит еще дольше.</div>
                                     </div>
-                                    <a href="#" class="read-more">Читать полностью...</a>
+
                                 </div>
                             </div>
                         </div>
@@ -384,7 +387,7 @@ get_header();
                                         <div class="reviews-item_title">Идеально подходит для легкого сна</div>
                                         <div class="product-page-reviews_text">Спасибо за отличный матрас. Хороший выбор на сайте и при этом все четко и понятно. Матрас высокий, ткань приятная. Очень стильно смотрится.</div>
                                     </div>
-                                    <a href="#" class="read-more">Читать полностью...</a>
+
                                 </div>
                             </div>
                         </div>
@@ -408,7 +411,7 @@ get_header();
                                         <div class="reviews-item_title">Идеально подходит для легкого сна</div>
                                         <div class="product-page-reviews_text">Решил заказать матрасы в детскую на сайте компании Мануфактура сна. Спасибо! И сервис огонь, и доставка экспресс и товар крут. Ассортимент на любой кошелек, но линейка матрасов подороже по какой-то, супер технологии сделана. Такие матрасы обычно сумасшедших денег стоят в магазинах, а здесь можно по адекватным ценам купить.</div>
                                     </div>
-                                    <a href="#" class="read-more">Читать полностью...</a>
+
                                 </div>
                             </div>
                         </div>
@@ -432,7 +435,7 @@ get_header();
                                         <div class="reviews-item_title">Идеально подходит для легкого сна</div>
                                         <div class="product-page-reviews_text">Спасибо компании Мануфактура сна за отличный матрас. Заказала через сайт, менеджер по телефону связался, задал уточняющие вопросы и стало понятно, что мне больше подойдет немного другой матрас. Удобная оплата на сайте, доставили очень быстро. </div>
                                     </div>
-                                    <a href="#" class="read-more">Читать полностью...</a>
+
                                 </div>
                             </div>
                         </div>
@@ -456,7 +459,7 @@ get_header();
                                         <div class="reviews-item_title">Идеально подходит для легкого сна</div>
                                         <div class="product-page-reviews_text">Заказал матрас на сайте, оказалось ребята сами производители, поэтому и цена очень приятная. Выбрал доставку ТК. Матрас был у меня через три дня после заказа. Уже обновил его, поэтому смело рекомендую! Качество отличное</div>
                                     </div>
-                                    <a href="#" class="read-more">Читать полностью...</a>
+
                                 </div>
                             </div>
                         </div>
@@ -489,7 +492,7 @@ get_header();
                                             жизнь!
                                             Теперь мне нужно бороться с собакой за место в постели и ...</div>
                                     </div>
-                                    <a href="#" class="read-more">Читать полностью...</a>
+
                                 </div>
                             </div>
                         </div>
@@ -518,7 +521,7 @@ get_header();
                                             жизнь!
                                             Теперь мне нужно бороться с собакой за место в постели и ...</div>
                                     </div>
-                                    <a href="#" class="read-more">Читать полностью...</a>
+
                                 </div>
                             </div>
                         </div>
@@ -547,7 +550,7 @@ get_header();
                                             жизнь!
                                             Теперь мне нужно бороться с собакой за место в постели и ...</div>
                                     </div>
-                                    <a href="#" class="read-more">Читать полностью...</a>
+
                                 </div>
                             </div>
                         </div>
@@ -576,7 +579,7 @@ get_header();
                                             жизнь!
                                             Теперь мне нужно бороться с собакой за место в постели и ...</div>
                                     </div>
-                                    <a href="#" class="read-more">Читать полностью...</a>
+
                                 </div>
                             </div>
                         </div>
@@ -606,7 +609,7 @@ get_header();
                                             Теперь мне нужно бороться с собакой за место в постели и ...
                                         </div>
                                     </div>
-                                    <a href="#" class="read-more">Читать полностью...</a>
+
                                 </div>
                             </div>
                         </div>
@@ -635,7 +638,7 @@ get_header();
                                             жизнь!
                                             Теперь мне нужно бороться с собакой за место в постели и ...</div>
                                     </div>
-                                    <a href="#" class="read-more">Читать полностью...</a>
+
                                 </div>
                             </div>
                         </div>
@@ -668,7 +671,7 @@ get_header();
                                             жизнь!
                                             Теперь мне нужно бороться с собакой за место в постели и ...</div>
                                     </div>
-                                    <a href="#" class="read-more">Читать полностью...</a>
+
                                 </div>
                             </div>
                         </div>
@@ -697,7 +700,7 @@ get_header();
                                             жизнь!
                                             Теперь мне нужно бороться с собакой за место в постели и ...</div>
                                     </div>
-                                    <a href="#" class="read-more">Читать полностью...</a>
+
                                 </div>
                             </div>
                         </div>
@@ -726,7 +729,7 @@ get_header();
                                             жизнь!
                                             Теперь мне нужно бороться с собакой за место в постели и ...</div>
                                     </div>
-                                    <a href="#" class="read-more">Читать полностью...</a>
+
                                 </div>
                             </div>
                         </div>
@@ -755,7 +758,7 @@ get_header();
                                             жизнь!
                                             Теперь мне нужно бороться с собакой за место в постели и ...</div>
                                     </div>
-                                    <a href="#" class="read-more">Читать полностью...</a>
+
                                 </div>
                             </div>
                         </div>
@@ -784,7 +787,6 @@ get_header();
                                             жизнь!
                                             Теперь мне нужно бороться с собакой за место в постели и ...</div>
                                     </div>
-                                    <a href="#" class="read-more">Читать полностью...</a>
                                 </div>
                             </div>
                         </div>
@@ -813,7 +815,6 @@ get_header();
                                             жизнь!
                                             Теперь мне нужно бороться с собакой за место в постели и ...</div>
                                     </div>
-                                    <a href="#" class="read-more">Читать полностью...</a>
                                 </div>
                             </div>
                         </div>
@@ -846,7 +847,7 @@ get_header();
                                             жизнь!
                                             Теперь мне нужно бороться с собакой за место в постели и ...</div>
                                     </div>
-                                    <a href="#" class="read-more">Читать полностью...</a>
+
                                 </div>
                             </div>
                         </div>
@@ -875,7 +876,7 @@ get_header();
                                             жизнь!
                                             Теперь мне нужно бороться с собакой за место в постели и ...</div>
                                     </div>
-                                    <a href="#" class="read-more">Читать полностью...</a>
+
                                 </div>
                             </div>
                         </div>
@@ -904,7 +905,7 @@ get_header();
                                             жизнь!
                                             Теперь мне нужно бороться с собакой за место в постели и ...</div>
                                     </div>
-                                    <a href="#" class="read-more">Читать полностью...</a>
+
                                 </div>
                             </div>
                         </div>
@@ -933,7 +934,7 @@ get_header();
                                             жизнь!
                                             Теперь мне нужно бороться с собакой за место в постели и ...</div>
                                     </div>
-                                    <a href="#" class="read-more">Читать полностью...</a>
+
                                 </div>
                             </div>
                         </div>
@@ -962,7 +963,7 @@ get_header();
                                             жизнь!
                                             Теперь мне нужно бороться с собакой за место в постели и ...</div>
                                     </div>
-                                    <a href="#" class="read-more">Читать полностью...</a>
+
                                 </div>
                             </div>
                         </div>
@@ -991,7 +992,7 @@ get_header();
                                             жизнь!
                                             Теперь мне нужно бороться с собакой за место в постели и ...</div>
                                     </div>
-                                    <a href="#" class="read-more">Читать полностью...</a>
+
                                 </div>
                             </div>
                         </div>
@@ -999,13 +1000,13 @@ get_header();
 
                 </div>
             </div>
-            <a href="reviews-page.html" class="read-all_reviews">Читать все отзывы</a>
+            <a href="http://top-matras.shop/reviews/" class="read-all_reviews">Читать все отзывы</a>
         </div>
     </div>
     <div class="video-container">
         <video src="<?php echo get_template_directory_uri(); ?>/assets/images/video.mp4" muted poster="<?php echo get_template_directory_uri(); ?>/assets/images/video.jpeg" controls="controls"></video>
     </div>
-    <div class="ready-container">
+    <div class="ready-container" id="ready">
         <div class="ready-content">
             <div class="ready-text">Вы готовы ко сну?</div>
             <div class="ready-button">
